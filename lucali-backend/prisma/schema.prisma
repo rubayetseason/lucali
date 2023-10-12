@@ -25,6 +25,7 @@ model User {
 
 model Reservation {
   id           String   @id @default(uuid())
+  personName   String
   personNumber String
   time         String
   date         String
