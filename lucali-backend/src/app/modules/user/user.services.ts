@@ -1,8 +1,16 @@
 import { User } from '@prisma/client';
 import { IGenericResponse } from '../../../interfaces/common';
 import prisma from '../../../shared/prisma';
+import config from '../../../config';
+import bcrypt from 'bcrypt';
 
 const createUser = async (data: User): Promise<User> => {
+  //hashed the user password
+  data.password = await bcrypt.hash(
+    data.password,
+    Number(config.bycrypt_salt_rounds)
+  );
+
   const result = await prisma.user.create({
     data,
   });
