@@ -7,12 +7,12 @@ const router = express.Router();
 
 router.get('/', FoodController.getAllFoods);
 
-router.get('/:id', FoodController.getSingleFood);
-
 router.get('/get-starters', FoodController.getStarters);
 router.get('/get-mains', FoodController.getMains);
 router.get('/get-desserts', FoodController.getDesserts);
 router.get('/get-mocktails', FoodController.getMocktails);
+
+router.get('/:id', FoodController.getSingleFood);
 
 router.post(
   '/create-food',
