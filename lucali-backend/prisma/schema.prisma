@@ -18,7 +18,8 @@ model User {
   role        String
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
-  Reservation Reservation[]
+  reservation Reservation[]
+  review      Review[]
 
   @@map("users")
 }
@@ -35,4 +36,30 @@ model Reservation {
   user         User     @relation(fields: [userId], references: [id])
 
   @@map("reservations")
+}
+
+model Food {
+  id          String   @id @default(uuid())
+  name        String
+  price       Int
+  description String
+  isPopular   Boolean
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  reviews     Review[]
+
+  @@map("foods")
+}
+
+model Review {
+  id                String   @id @default(uuid())
+  reviewDescription String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  foodId            String
+  food              Food     @relation(fields: [foodId], references: [id])
+  userId            String
+  user              User     @relation(fields: [userId], references: [id])
+
+  @@map("reviews")
 }
