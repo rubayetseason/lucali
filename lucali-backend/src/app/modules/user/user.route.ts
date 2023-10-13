@@ -11,7 +11,7 @@ router.get('/:id', UserController.getSingleUser);
 
 router.post(
   '/create-user',
-  // validateRequest(UserValidation.createUserZodSchema),
+  validateRequest(UserValidation.createUserZodSchema),
   UserController.createUser
 );
 router.patch(
