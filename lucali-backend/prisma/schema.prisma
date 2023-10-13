@@ -42,6 +42,8 @@ model Food {
   id          String   @id @default(uuid())
   name        String
   price       Int
+  firstImg    String   @default("")
+  secondImg   String   @default("")
   type        FoodType
   description String
   isPopular   Boolean

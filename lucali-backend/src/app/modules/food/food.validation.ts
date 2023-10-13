@@ -15,6 +15,12 @@ const createFoodZodSchema = z.object({
     description: z.string({
       required_error: 'Description is required',
     }),
+    firstImg: z.string({
+      required_error: 'FirstImg is required',
+    }),
+    secondImg: z.string({
+      required_error: 'SecondImg is required',
+    }),
     isPopular: z.boolean({
       required_error: 'isPopular is required',
     }),
