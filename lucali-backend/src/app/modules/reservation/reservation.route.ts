@@ -10,7 +10,7 @@ router.get('/', ReservationController.getAllReservations);
 router.get('/:id', ReservationController.getSingleReservation);
 
 router.post(
-  '/create-user',
+  '/create-reservation',
   validateRequest(ReservationValidation.createReservationZodSchema),
   ReservationController.createReservation
 );
