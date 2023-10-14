@@ -3,8 +3,10 @@
   position: fixed;
   top: 0;
   width: 100%;
+  border-bottom: 1px solid #666564;
 }
 
 .active {
-  background-color: crimson;
+  background-color: #0b1315;
+  border: none;
 }

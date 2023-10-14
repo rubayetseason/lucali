@@ -4,6 +4,7 @@ import logo from "../../../assets/logo.png";
 import Sidebar from "./Sidebar";
 import { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
+import textStyle from "../Footer/Footer.module.css";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState<boolean>(false);
@@ -32,12 +33,12 @@ const Navbar = () => {
     <div
       className={`${
         navbar ? `${styles.navbar} ${styles.active}` : `${styles.navbar}`
-      }  py-2 flex justify-between items-center border-b-[0.5px] border-[#666564] sticky top-0 z-50`}
+      }  py-2 flex justify-between items-center border-[#666564] sticky top-0 z-50`}
     >
       <div className="pl-4">
         <Image src={logo} className="w-8" alt="logo" />
       </div>
-      <div className="text-3xl">Lucali</div>
+      <div className={`text-3xl ${textStyle.text}`}>Lucali</div>
       <div className="pr-4">
         <Sidebar></Sidebar>
       </div>
