@@ -9,9 +9,7 @@ const SidebarContent = () => {
       {/* Sidebar content here */}
       <div className="flex gap-3 items-center mb-5">
         <Image src={lucali} alt="logo" className="w-7" />
-        <h1 className={`text-base ${styles.text} font-extrabold`}>
-          WELCOME TO LUCALI
-        </h1>
+        <h1 className={`text-xl ${styles.text} font-extrabold`}>LUCALI</h1>
       </div>
       <li>
         <Link href={"/"}>

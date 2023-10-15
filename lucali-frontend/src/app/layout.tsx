@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/ui/Navbar/Navbar";
 import Footer from "@/components/ui/Footer/Footer";
+import { AOSInit } from "@/helpers/aos";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en" data-theme="black">
+        <AOSInit />
         <body className={inter.className}>
           <section>
             <Navbar></Navbar>
