@@ -29,7 +29,7 @@ const HeroMobile = () => {
         </h1>
         <div className="text-center">
           <button
-            className={`border-t-2 border-b-2 border-[#FED18D] px-2 py-3  ${styles.paragraph}`}
+            className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph}`}
           >
             Make Reservations
           </button>

@@ -39,7 +39,11 @@ const Specialty = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 px-14 gap-5 md:gap-0">
         {specialties.map((specialty) => {
           return (
-            <div key={specialty.id} className="relative pt-5 md:pt-0">
+            <div
+              key={specialty.id}
+              className="relative pt-5 md:pt-0"
+              data-aos="fade-up"
+            >
               <Image
                 className="brightness-50 w-full h-72 md:h-full md:w-80 object-cover mx-auto hover:brightness-75 transition-brightness duration-200 ease-in-out"
                 src={specialty?.image}
@@ -53,6 +57,13 @@ const Specialty = () => {
             </div>
           );
         })}
+      </div>
+      <div className="text-center mt-10">
+        <button
+          className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph}`}
+        >
+          Check Entire Menu
+        </button>
       </div>
     </div>
   );

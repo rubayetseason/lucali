@@ -38,7 +38,7 @@ const Discover = () => {
         </h1>
         <div className="pb-8">
           <button
-            className={`text-xs border-t-2 border-b-2 border-[#FED18D] px-2 py-3 ${styles.paragraph}`}
+            className={`text-xs border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3 ${styles.paragraph}`}
           >
             DISCOVER THE KITCHEN
           </button>
