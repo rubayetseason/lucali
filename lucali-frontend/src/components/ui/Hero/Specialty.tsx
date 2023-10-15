@@ -36,12 +36,12 @@ const Specialty = () => {
       >
         Our Specialty
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 px-14">
+      <div className="grid grid-cols-1 md:grid-cols-3 px-14 gap-5 md:gap-0">
         {specialties.map((specialty) => {
           return (
-            <div key={specialty.id} className="relative">
+            <div key={specialty.id} className="relative pt-5 md:pt-0">
               <Image
-                className="brightness-50 w-72 mx-auto hover:brightness-75 transition-brightness duration-200 ease-in-out"
+                className="brightness-50 w-full h-72 md:h-full md:w-80 object-cover mx-auto hover:brightness-75 transition-brightness duration-200 ease-in-out"
                 src={specialty?.image}
                 alt="item"
               />
