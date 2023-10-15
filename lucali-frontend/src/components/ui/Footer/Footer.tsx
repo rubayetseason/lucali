@@ -7,16 +7,22 @@ const Footer = () => {
     <div className="pt-10 flex justify-center items-center bg-[#0B1315]">
       <div>
         <div className="flex justify-center items-center">
-          <Image src={logo} className="w-14" alt="logo" />
+          <Image src={logo} className="w-10 md:w-14" alt="logo" />
         </div>
         <div className="pt-14">
-          <h1 className={`${styles.text} text-xl text-center py-1 font-semibold`}>
+          <h1
+            className={`${styles.text} text-base md:text-xl text-center py-1 font-semibold`}
+          >
             Lucali Kitchen & Fine Dining, 71 Madison Ave
           </h1>
-          <h1 className={`${styles.text} text-xl text-center py-1 font-semibold`}>
+          <h1
+            className={`${styles.text} text-base md:text-xl text-center py-1 px-1 md:px-0 font-semibold`}
+          >
             10013 New York, (+88) 01978-258725, reservations@lucali.com
           </h1>
-          <h1 className={`${styles.text} text-xl text-center py-1 font-semibold`}>
+          <h1
+            className={`${styles.text} text-base md:text-xl text-center py-1 font-semibold`}
+          >
             Open: 11:00 am - 11:00 pm
           </h1>
         </div>

@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <Providers>
-      <html lang="en">
+      <html lang="en" data-theme="black">
         <body className={inter.className}>
           <section>
             <Navbar></Navbar>
