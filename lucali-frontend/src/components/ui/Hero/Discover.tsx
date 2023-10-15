@@ -27,7 +27,7 @@ const Discover = () => {
           meets grandeur. Come and savor the taste of luxury in every bite.
         </h1>
         <h1
-          className={`block md:hidden text-xs text-gray-300 ${styles.paragraph} leading-loose pr-20 pb-8`}
+          className={`block md:hidden text-xs text-gray-300 ${styles.paragraph} leading-loose pr-20`}
         >
           Whether its a romantic dinner, a celebratory event, or a business
           gathering, our restaurant offers an unmatched setting where gastronomy
@@ -36,6 +36,13 @@ const Discover = () => {
           regal affair. <br />
           <br />
         </h1>
+        <div className="pb-8">
+          <button
+            className={`text-xs border-t-2 border-b-2 border-[#FED18D] px-2 py-3 ${styles.paragraph}`}
+          >
+            DISCOVER THE KITCHEN
+          </button>
+        </div>
       </div>
       <div className="flex-1">
         <div className="flex justify-end">
