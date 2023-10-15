@@ -21,7 +21,7 @@ const HeroPc = () => {
         <h1
           className={`text-center text-xl ${styles.paragraph} mb-8`}
           data-aos="fade-left"
-          data-aos-delay="700"
+          data-aos-delay="500"
         >
           Indulge in culinary perfection at our luxury fine dining restaurant,
           where every dish is a masterpiece, and every moment is an elegant

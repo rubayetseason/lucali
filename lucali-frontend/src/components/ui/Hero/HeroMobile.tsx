@@ -21,7 +21,7 @@ const HeroMobile = () => {
         <h1
           className={`px-5 text-center text-sm ${styles.paragraph} mb-8`}
           data-aos="fade-left"
-          data-aos-delay="700"
+          data-aos-delay="500"
         >
           Experience culinary excellence at our luxury fine dining
           establishment, where each dish is a masterpiece and every moment
