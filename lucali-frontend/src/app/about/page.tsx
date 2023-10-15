@@ -1,16 +1,16 @@
 import Image from "next/image";
-import contactHero from "../../assets/contactHero.jpg";
-import styles from "./Contact.module.css";
+import about from "../../assets/about.jpg";
 import Link from "next/link";
-import Contact from "@/components/ui/Contact";
+import styles from "./About.module.css";
+import About from "@/components/ui/About";
 
-const ContactUsPage = () => {
+const AboutUsPage = () => {
   return (
     <div>
       <div className="h-[30rem] relative">
         <Image
-          src={contactHero}
-          alt="contact"
+          src={about}
+          alt="about"
           className="w-full h-full object-cover brightness-[0.4]"
         />
         <div className="absolute top-1/2 left-1/2 z-40 transform -translate-x-1/2 -translate-y-1/2">
@@ -20,7 +20,7 @@ const ContactUsPage = () => {
                 <Link href={"/"}>Home</Link>
               </li>
               <li>
-                <Link href={"/contact"}>Contact Us</Link>
+                <Link href={"/about"}>About Us</Link>
               </li>
             </ul>
           </div>
@@ -29,15 +29,15 @@ const ContactUsPage = () => {
             data-aos="fade-down"
             data-aos-delay="100"
           >
-            CONTACT US
+            About Us
           </h1>
         </div>
       </div>
       <div className="bg-[#040E10] py-10">
-        <Contact></Contact>
+        <About></About>
       </div>
     </div>
   );
 };
 
-export default ContactUsPage;
+export default AboutUsPage;
