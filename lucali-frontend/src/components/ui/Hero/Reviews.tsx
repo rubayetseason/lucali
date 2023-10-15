@@ -1,8 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import styles from "./Reviews.module.css";
+import Review from "./Review";
 
 export const Reviews = () => {
   const autoplayOptions = {
@@ -10,22 +10,29 @@ export const Reviews = () => {
     rootNode: (emblaRoot: any) => emblaRoot.parentElement,
   };
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay(autoplayOptions),
   ]);
 
-  useEffect(() => {
-    if (emblaApi) {
-      console.log(emblaApi.slideNodes());
-    }
-  }, [emblaApi]);
-
   return (
-    <div className={styles.embla} ref={emblaRef}>
-      <div className={styles.embla__container}>
-        <div className={styles.embla__slide}>Slide 1</div>
-        <div className={styles.embla__slide}>Slide 2</div>
-        <div className={styles.embla__slide}>Slide 3</div>
+    <div>
+      <div
+        className={`${styles.text} text-[#FED18D] pt-5 text-center text-3xl md:text-4xl`}
+      >
+        Our Reviews
+      </div>
+      <div className={`${styles.embla} py-10`} ref={emblaRef}>
+        <div className={styles.embla__container}>
+          <div className={styles.embla__slide}>
+            <Review></Review>
+          </div>
+          <div className={styles.embla__slide}>
+            <Review></Review>
+          </div>
+          <div className={styles.embla__slide}>
+            <Review></Review>
+          </div>
+        </div>
       </div>
     </div>
   );
