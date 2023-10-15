@@ -1,6 +1,5 @@
 import SidebarContent from "./SidebarContent";
-import { CgMenuRight } from "react-icons/cg";
-
+import { RiMenu4Line } from "react-icons/ri";
 const Sidebar = () => {
   return (
     <div>
@@ -12,7 +11,7 @@ const Sidebar = () => {
             htmlFor="my-drawer-4"
             className="drawer-button text-3xl text-[#bd9253]"
           >
-            <CgMenuRight />
+            <RiMenu4Line />
           </label>
         </div>
         <div className="drawer-side">
