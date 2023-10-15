@@ -2,6 +2,7 @@ import Discover from "@/components/ui/Hero/Discover";
 import HeroMobile from "@/components/ui/Hero/HeroMobile";
 import HeroPc from "@/components/ui/Hero/HeroPc";
 import Opening from "@/components/ui/Hero/Opening";
+import { Reviews } from "@/components/ui/Hero/Reviews";
 import Specialty from "@/components/ui/Hero/Specialty";
 
 export default function Home() {
@@ -21,6 +22,9 @@ export default function Home() {
       </div>
       <div className="py-10 bg-[#0B1315]">
         <Specialty></Specialty>
+      </div>
+      <div className="py-10 bg-[#111D22]">
+        <Reviews></Reviews>
       </div>
     </div>
   );
