@@ -11,17 +11,17 @@ const Footer = () => {
         </div>
         <div className="pt-14">
           <h1
-            className={`${styles.text} text-base md:text-xl text-center py-1 font-semibold`}
+            className={`${styles.text} text-base md:text-xl text-center py-1 font-medium`}
           >
             Lucali Kitchen & Fine Dining, 71 Madison Ave
           </h1>
           <h1
-            className={`${styles.text} text-base md:text-xl text-center py-1 px-1 md:px-0 font-semibold`}
+            className={`${styles.text} text-base md:text-xl text-center py-1 px-1 md:px-0 font-medium`}
           >
             10013 New York, (+88) 01978-258725, reservations@lucali.com
           </h1>
           <h1
-            className={`${styles.text} text-base md:text-xl text-center py-1 font-semibold`}
+            className={`${styles.text} text-base md:text-xl text-center py-1 font-medium`}
           >
             Open: 11:00 am - 11:00 pm
           </h1>

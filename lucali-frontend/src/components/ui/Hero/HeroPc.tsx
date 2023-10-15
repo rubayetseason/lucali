@@ -1,14 +1,18 @@
 import Image from "next/image";
-import hero from "../../../assets/carousel/hero-2.jpg";
-import styles from "./CarouselMain.module.css";
+import hero from "../../../assets/hero/hero.jpg";
+import styles from "./Hero.module.css";
 
-const CaourselImage1 = () => {
+const HeroPc = () => {
   return (
-    <div className={styles.embla__slide}>
-      <Image src={hero} alt="hero-1" className="h-full relative" />
+    <div>
+      <Image
+        src={hero}
+        alt="hero-1"
+        className="w-full relative brightness-[0.4]"
+      />
       <div className="absolute top-1/2 left-1/2 z-40 transform -translate-x-1/2 -translate-y-1/2">
         <h1
-          className={` ${styles.text} italic text-center font-bold text-7xl mb-4`}
+          className={` ${styles.text} italic text-center font-bold text-7xl mb-4 tracking-wider`}
           data-aos="fade-down"
           data-aos-delay="300"
         >
@@ -35,4 +39,4 @@ const CaourselImage1 = () => {
   );
 };
 
-export default CaourselImage1;
+export default HeroPc;
