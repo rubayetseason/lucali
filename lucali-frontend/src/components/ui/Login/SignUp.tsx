@@ -5,16 +5,40 @@ import styles from "./Login.module.css";
 import image from "../../../assets/login/login.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { useUserCreateMutation } from "@/redux/api/userApi";
+import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
 
 const SignUp = () => {
+  const router = useRouter();
+
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
 
-  const handleLogin = (data: any) => {
-    console.log(data);
+  const [userCreate] = useUserCreateMutation();
+
+  const handleLogin = async (data: any) => {
+    data.role = "admin";
+
+    try {
+      const res = await userCreate(data).unwrap();
+      if (res?.id) {
+        Swal.fire({
+          title: "Successful",
+          text: "User created successully",
+          icon: "success",
+          confirmButtonText: "Cool",
+        });
+        router.push("/");
+      }
+
+      console.log(res);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
