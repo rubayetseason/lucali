@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "../Footer/Footer.module.css";
 import lucali from "../../../assets/logo.png";
@@ -8,10 +9,15 @@ import { authKey } from "@/constants/authKey";
 import { useRouter } from "next/navigation";
 
 const SidebarContent = () => {
-  const router = useRouter();
-
   const { role } = getUserInfo() as any;
-  console.log(role);
+
+  const [isClient, setIsClient] = useState<boolean>(false);
+
+  useEffect(() => {
+    role && setIsClient(true);
+  }, [role]);
+
+  const router = useRouter();
 
   const logOut = () => {
     removeUserInfo(authKey);
@@ -70,15 +76,28 @@ const SidebarContent = () => {
           </button>
         </Link>
       </li>
-      <li>
-        <Link href={"/login"}>
-          <button
-            className={`${styles.text} px-7 py-2 border-[1px] border-[#FED18D] text-base font-semibold`}
-          >
-            Login
-          </button>
-        </Link>
-      </li>
+      {isClient && (
+        <li>
+          <Link href={"/"}>
+            <button
+              className={`${styles.text} px-6 py-2 border-[1px] border-[#FED18D] text-base font-semibold`}
+            >
+              Log Out
+            </button>
+          </Link>
+        </li>
+      )}
+      {!isClient && (
+        <li>
+          <Link href={"/login"}>
+            <button
+              className={`${styles.text} px-2 py-2 border-b-[1px] border-[#FED18D] text-base font-semibold`}
+            >
+              Login
+            </button>
+          </Link>
+        </li>
+      )}
     </ul>
   );
 };

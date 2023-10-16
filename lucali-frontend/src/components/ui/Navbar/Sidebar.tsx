@@ -1,3 +1,4 @@
+"use client";
 import SidebarContent from "./SidebarContent";
 import { RiMenu4Line } from "react-icons/ri";
 const Sidebar = () => {
