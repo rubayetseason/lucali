@@ -1,13 +1,17 @@
+"use client";
 import Link from "next/link";
 import styles from "../Footer/Footer.module.css";
 import lucali from "../../../assets/logo.png";
 import Image from "next/image";
-import { removeUserInfo } from "@/services/auth.services";
+import { getUserInfo, removeUserInfo } from "@/services/auth.services";
 import { authKey } from "@/constants/authKey";
 import { useRouter } from "next/navigation";
 
 const SidebarContent = () => {
   const router = useRouter();
+
+  const { role } = getUserInfo() as any;
+  console.log(role);
 
   const logOut = () => {
     removeUserInfo(authKey);
