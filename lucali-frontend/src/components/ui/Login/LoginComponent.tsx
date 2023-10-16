@@ -5,16 +5,37 @@ import styles from "./Login.module.css";
 import image from "../../../assets/login/login.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { useUserLoginMutation } from "@/redux/api/authApi";
+import { useRouter } from "next/navigation";
+import { storeUserInfo } from "@/services/auth.services";
+import Swal from "sweetalert2";
 
 const Login = () => {
+  const router = useRouter();
+
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
 
-  const handleLogin = (data: any) => {
-    console.log(data);
+  const [userLogin] = useUserLoginMutation();
+
+  const handleLogin = async (data: any) => {
+    try {
+      const res = await userLogin(data).unwrap();
+      if (res?.accessToken) {
+        Swal.fire({
+          text: "User login successful",
+          icon: "success",
+          confirmButtonText: "Continue",
+        });
+        router.push("/");
+      }
+      storeUserInfo({ accessToken: res?.accessToken });
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

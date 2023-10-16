@@ -27,12 +27,12 @@ const SignUp = () => {
       const res = await userCreate(data).unwrap();
       if (res?.id) {
         Swal.fire({
-          title: "Successful",
-          text: "User created successully",
+          title: "User created successully",
+          text: "Kindly login now",
           icon: "success",
           confirmButtonText: "Cool",
         });
-        router.push("/");
+        router.push("/login");
       }
 
       console.log(res);
