@@ -6,7 +6,7 @@ import image from "../../../assets/login/login.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const Login = () => {
+const SignUp = () => {
   const {
     register,
     formState: { errors },
@@ -27,9 +27,26 @@ const Login = () => {
       <div className=" flex justify-center items-center">
         <div className="w-96 p-7 bg-[#040E10] bg-opacity-20 mt-10 border-[1px] border-[#FED18D] absolute top-1/2 left-1/2 z-40 transform -translate-x-1/2 -translate-y-1/2">
           <h2 className={`text-2xl text-center font-bold mb-5 ${styles.text}`}>
-            Welcome Back
+            Welcome to Lucali
           </h2>
           <form onSubmit={handleSubmit(handleLogin)}>
+            <div className="form-control w-full">
+              <label className="label">
+                {" "}
+                <span className={`label-text ${styles.text} font-semibold`}>
+                  Your Name
+                </span>
+              </label>
+              <input
+                type="text"
+                placeholder="Full name"
+                required
+                {...register("name", {
+                  required: "Name is required",
+                })}
+                className="input input-bordered w-full"
+              />
+            </div>
             <div className="form-control w-full">
               <label className="label">
                 {" "}
@@ -67,19 +84,16 @@ const Login = () => {
 
             <div className="mt-2">
               <h1 className="text-sm font-bold">
-                Dont have an account?{" "}
-                <Link href={"/signup"}>
-                  <span className="text-sm text-white">
-                    {" "}
-                    Create new account
-                  </span>{" "}
+                Already have an account?{" "}
+                <Link href={"/login"}>
+                  <span className="text-sm text-white"> Login</span>{" "}
                 </Link>
               </h1>
             </div>
 
             <input
               className={`btn btn-primary w-full ${styles.text} text-lg mt-4`}
-              value="Login"
+              value="Sign up"
               type="submit"
             />
           </form>
@@ -89,4 +103,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
