@@ -2,8 +2,18 @@ import Link from "next/link";
 import styles from "../Footer/Footer.module.css";
 import lucali from "../../../assets/logo.png";
 import Image from "next/image";
+import { removeUserInfo } from "@/services/auth.services";
+import { authKey } from "@/constants/authKey";
+import { useRouter } from "next/navigation";
 
 const SidebarContent = () => {
+  const router = useRouter();
+
+  const logOut = () => {
+    removeUserInfo(authKey);
+    router.push("/");
+  };
+
   return (
     <ul className="menu p-4 w-80 min-h-full bg-[#191E24] text-base-content">
       {/* Sidebar content here */}
@@ -30,7 +40,7 @@ const SidebarContent = () => {
         </Link>
       </li>
       <li>
-        <Link href={"/"}>
+        <Link href={"/menu"}>
           <button
             className={`${styles.text} px-2 py-2 border-b-[1px] border-[#FED18D] text-base font-semibold`}
           >
@@ -39,7 +49,7 @@ const SidebarContent = () => {
         </Link>
       </li>
       <li>
-        <Link href={"/"}>
+        <Link href={"/reservation"}>
           <button
             className={`${styles.text} px-2 py-2 border-b-[1px] border-[#FED18D] text-base font-semibold`}
           >

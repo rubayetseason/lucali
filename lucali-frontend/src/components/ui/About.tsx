@@ -1,6 +1,8 @@
+import { getUserInfo } from "@/services/auth.services";
 import styles from "./Footer/Footer.module.css";
 
 const About = () => {
+  console.log(getUserInfo());
   return (
     <div>
       <h1
