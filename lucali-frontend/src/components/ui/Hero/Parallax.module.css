@@ -1,0 +1,19 @@
+.bgHeader {
+  background: url("../../../assets/special.jpg") center center no-repeat;
+  background-attachment: fixed;
+}
+
+.bgQuote {
+  background: url("../../../assets/special.jpg") center center no-repeat;
+  background-attachment: fixed;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.text {
+  font-family: "Italiana", sans-serif;
+}
+
+.paragraph {
+  font-family: "Raleway", sans-serif;
+}
