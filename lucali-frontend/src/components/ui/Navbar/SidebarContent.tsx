@@ -57,7 +57,7 @@ const SidebarContent = () => {
         </Link>
       </li>
       <li>
-        <Link href={"/"}>
+        <Link href={"/login"}>
           <button
             className={`${styles.text} px-7 py-2 border-[1px] border-[#FED18D] text-base font-semibold`}
           >
