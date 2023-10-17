@@ -2,6 +2,7 @@ import Image from "next/image";
 import specialty1 from "../../../assets/hero/specialty1.jpg";
 import specialty2 from "../../../assets/hero/specialty2.jpg";
 import specialty3 from "../../../assets/hero/specialty3.jpg";
+import specialty4 from "../../../assets/hero/specialty4.jpg";
 import styles from "./Hero.module.css";
 
 interface ISpecialty {
@@ -27,6 +28,11 @@ const Specialty = () => {
       image: specialty3,
       name: "Desserts",
     },
+    {
+      id: 4,
+      image: specialty4,
+      name: "Mocktails",
+    },
   ];
 
   return (
@@ -36,7 +42,7 @@ const Specialty = () => {
       >
         Our Specialty
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 px-14 gap-5 md:gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-4 px-14 gap-5 md:gap-3">
         {specialties.map((specialty) => {
           return (
             <div
