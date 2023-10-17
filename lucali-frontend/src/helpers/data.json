@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Sakura Blossom Sashimi Showcase",
+    "price": 72,
+    "img": "https://i.ibb.co/zSXsLXr/starter-1.jpg",
+    "detail": "Ahi Tuna, Hokkaido Scallop, Hamachi Yellowtail, Bluefin Toro",
+    "type": "STARTERS",
+    "description": "Indulge in the epitome of sushi elegance with our Sakura Blossom Sashimi Showcase. This exquisite starter is a harmonious symphony of the finest ingredients the ocean has to offer. Delicate slices of Ahi Tuna, succulent Hokkaido Scallop, and the buttery richness of Hamachi Yellowtail will transport your taste buds to new heights of culinary delight. But the crowning jewel of this showcase is the prized Bluefin Toro, celebrated for its melt-in-your-mouth texture and incomparable flavor. Each piece is a work of art, masterfully prepared to highlight the pure essence of these ocean treasures. Accompanied by our signature dipping sauces and garnished with a touch of luxury, it's a culinary journey for the most discerning palates. Experience the Sakura Blossom Sashimi Showcase, a true masterpiece of the sea.",
+    "isPopular": true
+  },
+  {
+    "name": "The Noirberry Elegance Bread Platter",
+    "price": 90,
+    "img": "https://i.ibb.co/F3ZK1xX/starter-2.jpg",
+    "detail": "Blackberry Jam, Artisanal Brioche, Lavender-Infused Butter",
+    "type": "STARTERS",
+    "description": "Indulge in the refined simplicity of our Noirberry Elegance Bread Platter. This culinary masterpiece is a testament to the harmonious fusion of flavors and textures. At its heart is the luscious Blackberry Jam, a symphony of sweet and tangy notes that marries perfectly with the delicate crumb of our Artisanal Brioche, meticulously crafted for your delight. To elevate your experience, we've paired it with Lavender-Infused Butter, a fragrant and velvety spread that adds a touch of floral elegance to each bite. Savor the artistry and taste the sophistication as you embark on a journey of epicurean delight with this platter, where each ingredient is a star, and every bite is a culinary revelation.",
+    "isPopular": false
+  },
+  {
+    "name": "Celestial Scallops with Hash Browns and Forest Mushrooms",
+    "price": 50,
+    "img": "https://i.ibb.co/3BpfGWs/starter-3.jpg",
+    "detail": "Scallops, hash browns, and wild mushrooms in perfect harmony.",
+    "type": "STARTERS",
+    "description": "This extraordinary platter is a gastronomic journey that begins with plump, succulent Scallops, seared to perfection and infused with a delicate sweetness that dances on the palate. Complementing these ocean treasures are Hash Browns, golden and crispy, adding a satisfying crunch and a hint of earthy comfort to each bite. The dish reaches its crescendo with a medley of Wild Mushrooms, carefully foraged from the depths of the forest, imparting an aromatic, umami-rich dimension that elevates this platter to epicurean perfection. Every component has been meticulously selected to create a symphony of flavors and textures that defines elegance. Celestial Scallops with Hash Browns and Forest Mushrooms is a testament to the culinary arts, designed to enchant the senses and leave a lasting impression on discerning palates.",
+    "isPopular": false
+  },
+  {
+    "name": "Cauliflower Elixir with Truffle Drizzle and Herbed Croutons",
+    "price": 60,
+    "img": "https://i.ibb.co/yYB6SzZ/starter-4.jpg",
+    "detail": "Creamy cauliflower, truffle drizzle, and herbed croutons",
+    "type": "STARTERS",
+    "description": "Indulge in the luxurious embrace of our Ethereal Cauliflower Elixir with Truffle Drizzle and Herbed Croutons. This velvety, creamy cauliflower soup transcends ordinary fare, offering a symphony of flavors and textures that redefine comfort and sophistication. The star of this culinary masterpiece is the cauliflower, transformed into a luscious elixir through a meticulously perfected recipe. Drizzled with truffle-infused oil, it takes on an earthy depth that tantalizes the palate, while herbed croutons provide a delightful crunch and a burst of herbaceous freshness. This soup is an enchanting journey of contrasts, where the ethereal and the robust collide in harmonious balance. Each spoonful is an invitation to savor the complexity of this creation, elevating the simple cauliflower to a gastronomic revelation. Ethereal Cauliflower Elixir with Truffle Drizzle and Herbed Croutons is a testament to the artistry of fine dining, where every bite is a journey through culinary excellence.",
+    "isPopular": true
+  },
+  {
+    "name": "Arctic Symphony Salmon Sashimi Extravaganza",
+    "price": 40,
+    "img": "https://i.ibb.co/Rg402ZP/starter-5.jpg",
+    "detail": "Arctic salmon, yuzu zest, and wasabi aioli.",
+    "type": "STARTERS",
+    "description": "Elevate your palate to new heights with our Arctic Symphony Salmon Sashimi Extravaganza. This exquisite sashimi platter stars the pristine Arctic salmon, expertly sliced to perfection to showcase its buttery texture and delicate flavor. Each slice is thoughtfully adorned with the zesty notes of yuzu zest, offering a tantalizing citrusy twist that complements the salmon's richness. To add a touch of gourmet flair, we present the sashimi with a dollop of our house-made wasabi aioli, a harmonious blend of pungent wasabi and creamy aioli, creating a delightful fusion of flavors. This culinary masterpiece invites you to explore the Arctic's culinary treasures, a symphony of freshness, flavor, and finesse, making it a must-try delicacy for discerning palates.",
+    "isPopular": true
+  },
+  {
+    "name": "Mediterranean Summer Symphony Salad",
+    "price": 36,
+    "img": "https://i.ibb.co/C5bQjxC/starter-6.jpg",
+    "detail": "Avocado, Vine-Ripened Tomatoes, and Crisp Butter Lettuce",
+    "type": "STARTERS",
+    "description": "Savor the essence of summer with our Mediterranean Summer Symphony Salad. This vibrant ensemble features the creamy richness of perfectly ripe avocados, the sun-kissed sweetness of vine-ripened tomatoes, and the crisp, delicate texture of butter lettuce. Every bite is a harmonious balance of flavors and textures, enhanced by a drizzle of extra-virgin olive oil and a hint of Mediterranean herbs. This salad is a refreshing ode to the Mediterranean coast, a burst of natural colors and tastes that transports you to a sun-soaked terrace overlooking the sea. Experience the epitome of simplicity and elegance in every forkful of this extraordinary salad.",
+    "isPopular": false
+  },
+  {
+    "name": "Gnocchi Grandeur Delight",
+    "price": 40,
+    "img": "https://i.ibb.co/pJMDx1h/starter-7.jpg",
+    "detail": "Potato Gnocchi, Truffle Cream Sauce, Wild Forest Mushrooms",
+    "type": "STARTERS",
+    "description": "Elevate your dining experience with our Gnocchi Grandeur Delight. Immerse yourself in the world of handmade potato gnocchi, tender and ethereal, paired with a luxuriously velvety truffle cream sauce. As the pièce de résistance, wild forest mushrooms impart their earthy enchantment to this dish, creating a medley of flavors that dance on the palate. Each bite is a journey into culinary artistry, a harmonious blend of textures and tastes that transcends the ordinary. The Gnocchi Grandeur Delight is a testament to the perfection of simplicity, capturing the essence of gourmet dining with every forkful.",
+    "isPopular": false
+  },
+  {
+    "name": "Golden Waffle Indulgence",
+    "price": 20,
+    "img": "https://i.ibb.co/Cm3Cx4T/starter-8.jpg",
+    "detail": "Fluffy Belgian Waffles, Fresh Berries, and Vanilla Bean Whipped Cream",
+    "type": "STARTERS",
+    "description": "Experience the pinnacle of breakfast luxury with our Golden Waffle Indulgence. These waffles are a work of culinary art, light and fluffy Belgian delicacies, griddled to a golden perfection. Topped with a vibrant assortment of fresh, hand-picked berries, each bite bursts with the sweet essence of the orchard. To elevate this decadent creation, we lavish it with a generous dollop of vanilla bean whipped cream, creating a symphony of flavors and textures. The Golden Waffle Indulgence is not just a breakfast; it's a celebration of mornings. Whether you savor it with a steaming cup of artisanal coffee or a glass of freshly squeezed juice, it's the quintessential gourmet breakfast experience that will leave you craving for more.",
+    "isPopular": false
+  },
+  {
+    "name": "Mediterranean Shawarma Spectacle",
+    "price": 33,
+    "img": "https://i.ibb.co/PMtWF93/starter-9.jpg",
+    "detail": "Tender Marinated Shawarma, Toasted Pita Bread, Fresh Tahini Sauce",
+    "type": "STARTERS",
+    "description": "Embark on a culinary journey to the heart of the Mediterranean with our Mediterranean Shawarma Spectacle. This extraordinary platter features tender marinated shawarma, expertly sliced and bursting with flavor. Served alongside lightly toasted pita bread, the perfect vessel for savoring every bite, this dish is a true work of art. Completing this masterpiece is a side of fresh tahini sauce, exuding a creamy and nutty richness that harmonizes with the savory shawarma. Each mouthful is a symphony of textures and tastes, a delightful exploration of the Mediterranean's most beloved flavors. The Mediterranean Shawarma Spectacle is more than a meal; it's an experience that transports you to bustling markets and sunny seaside cafes. Immerse yourself in the essence of the Mediterranean with every savory bite",
+    "isPopular": false
+  },
+  {
+    "name": "Ocean's Bounty Surf and Turf",
+    "price": 90,
+    "img": "https://i.ibb.co/948Wfxf/mains-1.jpg",
+    "detail": "Jumbo Alaskan King Crab, Prime Filet Mignon, Seared Sea Scallops",
+    "type": "MAINCOURSE",
+    "description": "Indulge in the epitome of culinary opulence with our Ocean's Bounty Surf and Turf Extravaganza. This sensational platter showcases the treasures of land and sea, harmoniously combined to create a symphony of flavors. At the heart of this feast is the jumbo Alaskan King Crab, celebrated for its sweet, succulent meat. Paired with a perfectly cooked prime filet mignon, it's a carnivore's dream come true. But the experience doesn't end there. Seared sea scallops, tender and delicate, complete this masterpiece, adding a briny touch that dances in perfect harmony with the richness of the crab and steak. Each bite is a celebration of the sea's finest and the land's most exquisite. The Ocean's Bounty Surf and Turf Extravaganza is a culinary journey you won't soon forget, transcending ordinary dining into an extraordinary epicurean adventure.",
+    "isPopular": false
+  },
+  {
+    "name": "Gourmet Roasted Chicken Symphony",
+    "price": 70,
+    "img": "https://i.ibb.co/FxsJ7Dh/mains-2.jpg",
+    "detail": "Herb-Infused Roasted Chicken, Truffle Mashed Potatoes, Seasonal Roasted Vegetables",
+    "type": "MAINCOURSE",
+    "description": "Experience a culinary masterpiece with our Gourmet Roasted Chicken Symphony. This dish is a celebration of exceptional flavors and a tribute to traditional roasting techniques. At its core is herb-infused roasted chicken, a succulent and tender masterpiece that embodies perfection. Served alongside are truffle mashed potatoes, a luxurious blend of creamy potatoes infused with the earthy richness of truffle oil, creating a velvety accompaniment that complements the chicken flawlessly. Completing this symphony are seasonal roasted vegetables, a vibrant medley of colors and tastes that add freshness and balance to each bite. This platter is a sensory delight, where each component is thoughtfully prepared and harmonized to create an unforgettable dining experience.",
+    "isPopular": false
+  },
+  {
+    "name": "Prime Filet Minon Marvel",
+    "price": 120,
+    "img": "https://i.ibb.co/bXzKPxg/mains-3.jpg",
+    "detail": "Prime Filet Mignon, Truffle Demi-Glace, Roasted Asparagus",
+    "type": "MAINCOURSE",
+    "description": "Indulge in the epitome of culinary excellence with our Prime Filet Minon Marvel. This extraordinary platter is a true masterpiece, featuring the crown jewel of steaks - the prime filet mignon. Each bite of our impeccably cooked filet mignon is a testament to perfection, its tenderness and marbling elevating it to a class of its own. To accentuate its richness, we drizzle it with a truffle demi-glace, infusing every mouthful with an earthy, indulgent depth of flavor. Accompanying this masterpiece are roasted asparagus spears, vibrant and perfectly charred, offering a delightful contrast that complements the steak. Every element of this platter is meticulously crafted to create a symphony of flavors and textures.",
+    "isPopular": true
+  },
+  {
+    "name": "Elevated Taco Fiesta Platter",
+    "price": 80,
+    "img": "https://i.ibb.co/nCkBBjw/mains-4.jpg",
+    "detail": "Savory Short Rib Barbacoa, Handcrafted Corn Tortillas, Avocado Lime Crema",
+    "type": "MAINCOURSE",
+    "description": "Prepare your taste buds for an Elevated Taco Fiesta Platter that redefines the art of taco creation. We've taken the beloved street food and transformed it into a gourmet delight. At the heart of this fiesta is our savory short rib barbacoa, slow-cooked to perfection, yielding succulent and flavorful meat that practically melts in your mouth. Served on handcrafted corn tortillas, each one a testament to authentic craftsmanship, these tacos are a textural delight. Completing this culinary masterpiece is the avocado lime crema, a creamy, zesty fusion that elevates the flavors of the tacos to new heights. Every bite is an explosion of taste, an exploration of textures, and an exquisite dance of culinary finesse.",
+    "isPopular": false
+  },
+  {
+    "name": "Palate's Delight Paneer Perfection",
+    "price": 91,
+    "img": "https://i.ibb.co/jJnkM1P/mains-5.jpg",
+    "detail": "Succulent Paneer Cubes, Fresh Spinach, Creamy Tomato Gravy",
+    "type": "MAINCOURSE",
+    "description": "Dive into the world of flavor with our 'Palate's Delight Paneer Perfection.' This exceptional main course features succulent paneer cubes, meticulously crafted to capture a creamy texture and soak up the rich flavors of our exquisite creamy tomato gravy. Fresh spinach, lovingly incorporated into this culinary marvel, adds a vibrant green hue and an earthy undertone, providing a delightful contrast to the luscious paneer. The result is a harmonious dance of flavors that elevates your senses. 'Palate's Delight Paneer Perfection' is a vegetarian masterpiece, a journey through the authentic flavors of India, and an ode to the perfection of paneer. Experience the enchantment of this dish, where every bite is a testament to gourmet dining.",
+    "isPopular": true
+  },
+  {
+    "name": "Surf and Turf Symphony",
+    "price": 100,
+    "img": "https://i.ibb.co/cy4mDvM/mains-6.jpg",
+    "detail": "Juicy Ribeye Steak, Succulent Shrimp, Truffle-Infused Béarnaise Sauce",
+    "type": "MAINCOURSE",
+    "description": "Immerse yourself in a culinary masterpiece with our 'Surf and Turf Symphony.' This extraordinary main course stars a juicy ribeye steak, cooked to your preference, its marbling and tenderness unparalleled. Accompanying this carnivorous delight are succulent shrimp, flawlessly seared to impart a delicate oceanic sweetness. The pièce de résistance is the truffle-infused Béarnaise sauce, a luxurious blend of rich flavors that enhances both the steak and shrimp with an earthy depth. Each bite is a fusion of land and sea, a symphony of succulence, and an exploration of gourmet perfection. Savor the Surf and Turf Symphony, where each ingredient harmonizes to create an unforgettable dining experience.",
+    "isPopular": false
+  },
+  {
+    "name": "Beef Wellington Elegance",
+    "price": 110,
+    "img": "https://i.ibb.co/b1VdKJk/mains-7.jpg",
+    "detail": "Tender Filet Mignon, Mushroom Duxelles, Flaky Puff Pastry",
+    "type": "MAINCOURSE",
+    "description": "Indulge in the epitome of gourmet dining with our 'Beef Wellington Elegance.' This extraordinary main course showcases a tender filet mignon, the finest cut of beef, cooked to perfection. The magic begins with a sumptuous layer of mushroom duxelles, a blend of finely minced mushrooms, shallots, and herbs, which envelops the filet in a flavorful embrace. This exquisite creation is then encased in flaky puff pastry, adding a delightful crunch to every exquisite bite. The result is a masterpiece of texture and taste, where each element contributes to an unforgettable culinary experience. 'Beef Wellington Elegance' is the epitome of sophistication and a testament to the art of fine dining, making it a beloved choice for discerning palates.",
+    "isPopular": true
+  },
+  {
+    "name": "Oven-Kissed Salmon Spectacle",
+    "price": 80,
+    "img": "https://i.ibb.co/mqMyngD/mains-8.jpg",
+    "detail": "Fresh Salmon Fillet, Lemon Dill Butter, Crispy Herb-Crusted Topping",
+    "type": "MAINCOURSE",
+    "description": "Savor the art of culinary finesse with our 'Oven-Kissed Salmon Spectacle.' This exceptional main course stars a fresh salmon fillet, its flavor as pristine as the waters from which it hails. The magic unfolds as it's enveloped in a lemon dill butter, which imparts a zesty, herbaceous essence that dances on your taste buds. But the masterpiece is the crispy herb-crusted topping, an expertly prepared blend of herbs and breadcrumbs that crowns the salmon, adding a satisfying crunch to every bite. 'Oven-Kissed Salmon Spectacle' is a symphony of flavors and textures, a culinary masterpiece that celebrates the essence of the ocean. Each element contributes to an unforgettable dining experience, making it a beloved choice for discerning palates.",
+    "isPopular": true
+  },
+  {
+    "name": "Savory Beef Ramen Rhapsody",
+    "price": 65,
+    "img": "https://i.ibb.co/GcpymQY/mains-9.png",
+    "detail": "Tender Beef Slices, Rich Ramen Broth, Hand-Pulled Noodles",
+    "type": "MAINCOURSE",
+    "description": "Experience the perfect harmony of flavors in our 'Savory Beef Ramen Rhapsody.' This remarkable main course features tender slices of beef that are meticulously prepared to a melt-in-your-mouth perfection. At the heart of this dish is the rich ramen broth, simmered to extract the deepest umami flavors, resulting in a soul-soothing elixir that will warm your heart and palate. The hand-pulled noodles provide the ideal textural balance, offering an authentic ramen experience. 'Savory Beef Ramen Rhapsody' is the embodiment of comfort and gourmet dining, a culinary journey that marries tradition with sophistication. Each ingredient contributes to an unforgettable dining experience, making it a cherished choice for discerning palates.",
+    "isPopular": true
+  },
+  {
+    "name": "Brownie Bliss with White Chocolate Drizzle",
+    "price": 60,
+    "img": "https://i.ibb.co/2hvr7LT/desserts-1.jpg",
+    "detail": "Rich Chocolate Brownie, White Chocolate Drizzle, Toasted Almond Garnish",
+    "type": "DESSERTS",
+    "description": "Indulge in a symphony of chocolatey delight with our 'Heavenly Brownie Bliss with White Chocolate Drizzle.' This exquisite dessert features a decadent and rich chocolate brownie, baked to perfection with a soft, fudgy center and a crisp, crackling crust. To elevate the experience, we generously drizzle it with white chocolate, imparting a luxurious creaminess that perfectly complements the deep cocoa flavors of the brownie. As a finishing touch, a scattering of toasted almonds adds a delightful crunch and a hint of nutty sophistication. This dessert is a sensory journey through the world of chocolate, a dessert lover's dream that marries tradition with a touch of gourmet elegance. 'Heavenly Brownie Bliss with White Chocolate Drizzle' is the perfect ending to a memorable meal, a sweet symphony of flavors and textures that will linger on your palate.",
+    "isPopular": true
+  },
+  {
+    "name": "Crimson Velvet Brownie Delight",
+    "price": 55,
+    "img": "https://i.ibb.co/vzdmvNr/desserts-2.jpg",
+    "detail": "Rich Red Velvet Brownie, Creamy Cheesecake Swirl, Raspberry Coulis Drizzle",
+    "type": "DESSERTS",
+    "description": "Unveil a world of dessert enchantment with our 'Crimson Velvet Brownie Delight.' This extraordinary dessert stars a rich red velvet brownie, its vibrant hue hinting at the decadence within. To enhance its allure, we've artfully swirled in creamy cheesecake, creating a delightful dance of textures and flavors. The grand finale is a drizzle of raspberry coulis, adding a burst of fruity vibrancy that contrasts beautifully with the sweet, velvety brownie. The 'Crimson Velvet Brownie Delight' is a dessert masterpiece, a culinary celebration of sophistication and indulgence. Each element contributes to an unforgettable dining experience, making it a beloved choice for discerning palates.",
+    "isPopular": false
+  },
+  {
+    "name": "Peaches and Cream Dream Cake",
+    "price": 85,
+    "img": "https://i.ibb.co/94nkmC1/desserts-3.jpg",
+    "detail": "Moist Peach-Infused Cake, Luscious Peaches, Whipped Cream Delight",
+    "type": "DESSERTS",
+    "description": "Satisfy your sweet cravings with our 'Peaches and Cream Dream Cake.' This indulgent dessert is a sensory delight that captures the essence of summer. At its heart is a moist peach-infused cake, where each bite unveils the delicate sweetness and vibrant flavor of ripe peaches. The cake is crowned with luscious peach slices, each a burst of natural juiciness that adds a refreshing twist. Completing this dessert is a cloud of whipped cream, a silky and delicate topping that elevates the peachy flavors to new heights. 'Peaches and Cream Dream Cake' is a masterpiece of texture and taste, a sweet symphony that celebrates the simplicity of fresh, seasonal ingredients. It's the perfect ending to a memorable meal, a delightful choice for dessert connoisseurs.",
+    "isPopular": true
+  },
+  {
+    "name": "Blueberry Bliss Pavlova",
+    "price": 55,
+    "img": "https://i.ibb.co/xJ87MKq/desserts-4.webp",
+    "detail": "Crisp Meringue Shell, Fresh Blueberries, Lavender-Infused Whipped Cream",
+    "type": "DESSERTS",
+    "description": "Elevate your dessert experience with our 'Blueberry Bliss Pavlova.' This exquisite dessert is a delightful marriage of textures and flavors, where elegance meets indulgence. At its heart is a crisp meringue shell, a work of culinary art that offers the perfect balance of sweet and airy. This ethereal creation is generously adorned with a bountiful harvest of fresh blueberries, their deep hue and natural sweetness offering a burst of vibrancy with every bite. Completing this masterpiece is a lavender-infused whipped cream, a dreamy topping that adds a hint of floral sophistication to the dessert. 'Blueberry Bliss Pavlova' is a culinary masterpiece, a celebration of simplicity and refinement that will leave you craving for more.",
+    "isPopular": true
+  },
+  {
+    "name": "Luscious White Cheesecake Symphony",
+    "price": 80,
+    "img": "https://i.ibb.co/Cw14xFw/desserts-5.jpg",
+    "detail": "Creamy White Cheesecake, Fresh Raspberries, Plump Blueberries",
+    "type": "DESSERTS",
+    "description": "Savor the divine indulgence of our 'Luscious White Cheesecake Symphony.' This dessert is a harmonious blend of elegance and pure delight. The centerpiece is a creamy white cheesecake, the epitome of velvety smoothness. It's generously adorned with a lavish array of fresh raspberries and plump blueberries. These berries offer a burst of fruity vibrancy and a delightful contrast to the cheesecake's lusciousness. The 'Luscious White Cheesecake Symphony' is a true masterpiece, where every bite is a celebration of exquisite flavors and textures. It's the perfect ending to a memorable meal, a sweet serenade that lingers on your palate, and a dessert connoisseur's dream.",
+    "isPopular": true
+  },
+  {
+    "name": "Rainbow Candy Ball Extravaganza",
+    "price": 75,
+    "img": "https://i.ibb.co/X58jWKT/desserts-6.jpg",
+    "detail": "Vibrant Candy Shells, Rich Chocolate Truffle, Surprise Burst of Flavor",
+    "type": "DESSERTS",
+    "description": "Prepare for a whimsical journey with our 'Rainbow Candy Ball Extravaganza.' This delightful dessert is a celebration of color, flavor, and surprise. The star of the show is the vibrant candy shells that enrobe each dessert ball, their hues a feast for the eyes. Inside, you'll discover rich chocolate truffles that provide a decadent contrast to the candy's sweetness. But the real magic happens when you bite into these delightful confections, as each one conceals a surprising burst of unique flavor. The 'Rainbow Candy Ball Extravaganza' is a dessert like no other, an experience that combines visual delight with a symphony of taste sensations. It's a joyful ending to a memorable meal, a sweet adventure for dessert enthusiasts.",
+    "isPopular": false
+  },
+  {
+    "name": "Decadent Chocolate Truffle Tart",
+    "price": 59,
+    "img": "https://i.ibb.co/3rmWJk4/desserts-7.jpg",
+    "detail": "Dark Chocolate Ganache, Buttery Tart Crust, Edible Gold Leaf Garnish",
+    "type": "DESSERTS",
+    "description": "Indulge in the ultimate chocolate lover's dream with our 'Decadent Chocolate Truffle Tart.' This dessert is a symphony of chocolate in its purest and most luxurious form. At its heart is a velvety dark chocolate ganache, a silky and rich filling that encapsulates the essence of fine cocoa. It's cradled by a buttery tart crust that crumbles delicately, providing the perfect textural contrast. To elevate this masterpiece, we adorn it with edible gold leaf, adding a touch of opulence to every bite. The 'Decadent Chocolate Truffle Tart' is a true celebration of decadence, a dessert connoisseur's delight, and the perfect conclusion to an exceptional meal.",
+    "isPopular": false
+  },
+  {
+    "name": "Molten Chocolate Ball Delight",
+    "price": 67,
+    "img": "https://i.ibb.co/Qvk6xR5/desserts-8.jpg",
+    "detail": "Moist Chocolate Pastry, Gooey Chocolate Center, Silky Chocolate Drizzle",
+    "type": "DESSERTS",
+    "description": "Elevate your dessert experience with our 'Molten Chocolate Ball Delight.' This exquisite creation is a symphony of chocolate, designed to tantalize your taste buds. The star of this dessert is the moist chocolate pastry, a work of culinary art that delivers a tender and chocolaty experience. But the real magic is unveiled as you delve into its center, where a gooey chocolate center awaits, oozing with rich, indulgent flavor. To complete this masterpiece, we drizzle it with a silky chocolate sauce, adding a touch of sophistication and a delightful contrast of textures. 'Molten Chocolate Ball Delight' is a dessert that celebrates the joy of chocolate in every bite, a sweet and indulgent conclusion to a remarkable meal.",
+    "isPopular": true
+  },
+  {
+    "name": "Artisan Fruit Popsicles",
+    "price": 59,
+    "img": "https://i.ibb.co/PG4mNVx/desserts-9.jpg",
+    "detail": "Fresh Fruit Medley, All-Natural Fruit Juices, Gourmet Fruit Infusions",
+    "type": "DESSERTS",
+    "description": "Refresh your palate with our 'Artisan Fruit Popsicles,' a celebration of the finest fruits and natural flavors. These gourmet popsicles are a cool, vibrant symphony of taste and artistry. We start with a fresh fruit medley, featuring the ripest, juiciest fruits of the season, carefully sliced and prepared. The magic lies in our all-natural fruit juices, which freeze into a delightful, ice-cold treat that bursts with the authentic essence of the fruits. For an extra touch of gourmet, we infuse our popsicles with artisanal fruit combinations, adding layers of complexity to every bite. 'Artisan Fruit Popsicles' are a guilt-free dessert, a visual and culinary delight that's as good for your taste buds as it is for your soul.",
+    "isPopular": true
+  },
+  {
+    "name": "Tropical Sunrise Elixir",
+    "price": 59,
+    "img": "https://i.ibb.co/4PVMf3J/mock-1.jpg",
+    "detail": "Fresh Pineapple Juice, Zesty Orange Zest, Coconut Cream Infusion",
+    "type": "MOCKTAILS",
+    "description": "Experience a taste of paradise with our 'Tropical Sunrise Elixir.' This exquisite mocktail is a symphony of tropical flavors that transport you to sun-drenched beaches and swaying palm trees. At its core is the freshness of pineapple juice, delivering a burst of sweet and tangy notes that awaken your senses. Zesty orange zest adds a citrusy twist, creating a vibrant play of flavors. To enrich this elixir, we infuse it with the velvety smoothness of coconut cream, imparting a creamy texture and a touch of the exotic. The 'Tropical Sunrise Elixir' is a non-alcoholic delight, a vacation in a glass that's perfect for a sunny afternoon or a breezy evening. It's the essence of tropical paradise and a must-try for those seeking a refreshing escape.",
+    "isPopular": false
+  },
+  {
+    "name": "Berry Bliss Breeze",
+    "price": 47,
+    "img": "https://i.ibb.co/Dw8sX2m/mock-2.jpg",
+    "detail": "Juicy Mixed Berries, Freshly Squeezed Lime Juice, Sparkling Elderflower Soda",
+    "type": "MOCKTAILS",
+    "description": "Let the 'Berry Bliss Breeze' carry you away on a refreshing journey of berry-infused delight. This mocktail is a symphony of summer's finest flavors, carefully crafted to quench your thirst and elevate your spirits. It all begins with a medley of juicy mixed berries, each bite a burst of sweet and tart, combined with freshly squeezed lime juice, offering a zesty and citrusy balance. To add a touch of effervescence and sophistication, we top it off with sparkling elderflower soda, making every sip a delightful dance of bubbles and flavor. The 'Berry Bliss Breeze' is the perfect companion for a sunny day, a garden party, or a moment of self-indulgence. It's a mocktail that embodies the carefree spirit of summer and is sure to become a popular choice among those seeking a fruity escape.",
+    "isPopular": true
+  },
+  {
+    "name": "Hibiscus Hiball Harmony",
+    "price": 65,
+    "img": "https://i.ibb.co/tMvHrRr/mock-3.jpg",
+    "detail": "Vibrant Hibiscus Infusion, Citrus Burst, Minty Freshness",
+    "type": "MOCKTAILS",
+    "description": "Savor the symphony of flavors in our 'Hibiscus Hiball Harmony.' This mocktail is a delightful dance of vibrant hibiscus, zesty citrus, and minty coolness. At its core, we infuse the vibrancy of hibiscus blossoms, creating a deep and enchanting crimson elixir. The zesty citrus burst adds a lively note, balancing the richness of the hibiscus with a refreshing tang. Completing this harmonious creation is a hint of minty freshness, imparting a crisp and invigorating finish. 'Hibiscus Hiball Harmony' is the perfect choice for those seeking a non-alcoholic option that's as vibrant as it is refreshing, an exquisite choice for a leisurely day or a sophisticated soirée.",
+    "isPopular": true
+  },
+  {
+    "name": "Cranberry Apple Crush",
+    "price": 55,
+    "img": "https://i.ibb.co/kJQk7Jf/mock-4.jpg",
+    "detail": "Tart Cranberry Juice, Fresh Apple Cider, Citrusy Lemon Twist",
+    "type": "MOCKTAILS",
+    "description": "Indulge in the zesty and refreshing 'Cranberry Apple Crush,' a mocktail that marries the vibrant flavors of cranberries, apples, and a citrusy twist. The star of this delightful concoction is tart cranberry juice, offering a bold and tangy character that awakens your palate. Fresh apple cider lends a hint of natural sweetness and a taste of orchard-fresh apples. To elevate the experience, we add a citrusy lemon twist, providing a bright and zesty finish. 'Cranberry Apple Crush' is a burst of fruitiness in every sip, perfect for those looking to quench their thirst with a non-alcoholic option. It's a delightful beverage for any occasion, whether a casual brunch or a stylish evening gathering.",
+    "isPopular": false
+  },
+  {
+    "name": "Mango Tango Fizz",
+    "price": 69,
+    "img": "https://i.ibb.co/MkLtyPb/mock-5.jpg",
+    "detail": "Ripe Mango Puree, Zesty Lime Juice, Sparkling Soda",
+    "type": "MOCKTAILS",
+    "description": "Step into the world of tropical delight with our 'Mango Tango Fizz.' This mocktail is a vivacious dance of ripe mangoes, zesty limes, and effervescent soda. At its heart is the lusciousness of ripe mango puree, a silky and sweet base that captures the essence of the tropics. Zesty lime juice adds a tangy twist, bringing a burst of citrusy freshness to the mix. To add a touch of bubbly excitement, we infuse it with sparkling soda, making every sip a refreshing tango of flavors. The 'Mango Tango Fizz' is your ticket to a tropical escape, a non-alcoholic beverage that's both lively and soothing. It's the perfect choice for those who seek a mocktail with a touch of the exotic.",
+    "isPopular": false
+  },
+  {
+    "name": "Ginger Zest Infusion",
+    "price": 70,
+    "img": "https://i.ibb.co/QFV9sVk/mock-6.jpg",
+    "detail": "Fresh Ginger Root, Lemon Zest, Sparkling Mineral Water",
+    "type": "MOCKTAILS",
+    "description": "Embrace the invigorating 'Ginger Zest Infusion,' a mocktail designed to awaken your senses and rejuvenate your spirit. This creation is a fusion of the finest natural ingredients, offering a refreshing and zesty experience. At its core is the essence of fresh ginger root, known for its aromatic and spicy notes. Lemon zest adds a bright and citrusy twist, enhancing the mocktail's overall zestiness. To complete the infusion, we add sparkling mineral water, turning every sip into a refreshing and effervescent journey. The 'Ginger Zest Infusion' is the ideal choice for those seeking a non-alcoholic beverage with a touch of spice and vibrancy. It's perfect for a pre-dinner apéritif or a revitalizing drink on a warm day.",
+    "isPopular": true
+  },
+  {
+    "name": "Pomegranate Paradise Punch",
+    "price": 80,
+    "img": "https://i.ibb.co/cJ3xVRh/mock-7.jpg",
+    "detail": "Fresh Pomegranate Juice, Pineapple Harmony, Sparkling Coconut Water",
+    "type": "MOCKTAILS",
+    "description": "Indulge in a sip of paradise with our 'Pomegranate Paradise Punch.' This mocktail is a tropical symphony of fresh pomegranate, pineapple, and the effervescence of coconut water. At its heart, we feature fresh pomegranate juice, known for its deep and tangy notes that awaken the senses. Pineapple harmony adds a touch of tropical sweetness, creating a delightful balance of flavors. To elevate the experience, we infuse it with sparkling coconut water, making every sip a refreshing and effervescent journey. The 'Pomegranate Paradise Punch' is your ticket to a tropical escape, a non-alcoholic beverage that captures the essence of a beachfront vacation. It's the perfect choice for those who seek a mocktail with a touch of the exotic and a burst of refreshment.",
+    "isPopular": true
+  },
+  {
+    "name": "Vanilla Chai Bliss",
+    "price": 65,
+    "img": "https://i.ibb.co/RjkkN6Y/mock-8.jpg",
+    "detail": "Chai Infusion, Creamy Vanilla Essence, Almond Milk Elixir",
+    "type": "MOCKTAILS",
+    "description": "Savor the comforting embrace of 'Vanilla Chai Bliss,' a mocktail that melds the warmth of chai, the richness of vanilla, and the creaminess of almond milk. At its heart is a carefully crafted chai infusion, bringing together the bold spices and soothing aroma of traditional chai. Creamy vanilla essence adds a touch of sweetness and a hint of sophistication, complementing the chai's spiciness. To create a harmonious and creamy base, we blend in almond milk, imparting a velvety texture and a nutty undertone. 'Vanilla Chai Bliss' is the ideal choice for those seeking a non-alcoholic beverage that combines the familiarity of chai with a touch of indulgence. It's a delightful drink for cozy evenings and moments of relaxation.",
+    "isPopular": false
+  },
+  {
+    "name": "Minty Watermelon Wave",
+    "price": 59,
+    "img": "https://i.ibb.co/3r57v8S/mock-9.webp",
+    "detail": "Fresh Watermelon Juice, Zesty Lime Zing, Cool Mint Garnish",
+    "type": "MOCKTAILS",
+    "description": "Dive into the refreshing 'Minty Watermelon Wave,' a mocktail that captures the essence of summer in every sip. This vibrant concoction is a harmonious blend of fresh watermelon, zesty lime, and a cooling touch of mint. The star of the show is the fresh watermelon juice, offering a burst of sweetness and natural hydration. A zesty lime zing adds a citrusy and tangy note that awakens your taste buds. To complete this delightful wave, we garnish it with cool mint leaves, creating a soothing and invigorating finish. 'Minty Watermelon Wave' is a crowd-pleaser, perfect for hot days or lively gatherings. Its combination of sweet, tangy, and minty elements makes it a beloved choice for those seeking a non-alcoholic drink that's both delicious and revitalizing.",
+    "isPopular": true
+  }
+]
