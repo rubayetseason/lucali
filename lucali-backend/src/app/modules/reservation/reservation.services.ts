@@ -5,9 +5,6 @@ import { IGenericResponse } from '../../../interfaces/common';
 const createReservation = async (data: Reservation): Promise<Reservation> => {
   const result = await prisma.reservation.create({
     data,
-    include: {
-      user: true,
-    },
   });
   return result;
 };
@@ -15,11 +12,7 @@ const createReservation = async (data: Reservation): Promise<Reservation> => {
 const getAllReservations = async (): Promise<
   IGenericResponse<Reservation[]>
 > => {
-  const result = await prisma.reservation.findMany({
-    include: {
-      user: true,
-    },
-  });
+  const result = await prisma.reservation.findMany({});
 
   return {
     meta: {
@@ -38,9 +31,6 @@ const getSingleReservation = async (
     where: {
       id,
     },
-    include: {
-      user: true,
-    },
   });
   return result;
 };
@@ -54,9 +44,6 @@ const updateReservation = async (
       id,
     },
     data: payload,
-    include: {
-      user: true,
-    },
   });
   return result;
 };
@@ -65,9 +52,6 @@ const deleteReservation = async (id: string): Promise<Reservation> => {
   const result = await prisma.reservation.delete({
     where: {
       id,
-    },
-    include: {
-      user: true,
     },
   });
   return result;

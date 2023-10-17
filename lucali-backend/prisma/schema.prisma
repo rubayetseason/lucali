@@ -11,15 +11,14 @@ datasource db {
 }
 
 model User {
-  id          String        @id @default(uuid())
-  name        String
-  number      String
-  password    String
-  role        String
-  createdAt   DateTime      @default(now())
-  updatedAt   DateTime      @updatedAt
-  reservation Reservation[]
-  review      Review[]
+  id        String   @id @default(uuid())
+  name      String
+  number    String
+  password  String
+  role      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  review    Review[]
 
   @@map("users")
 }
@@ -30,10 +29,9 @@ model Reservation {
   personNumber String
   time         String
   date         String
+  people       String
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
-  userId       String
-  user         User     @relation(fields: [userId], references: [id])
 
   @@map("reservations")
 }
@@ -42,8 +40,8 @@ model Food {
   id          String   @id @default(uuid())
   name        String
   price       Int
-  firstImg    String   @default("")
-  secondImg   String   @default("")
+  img         String   @default("")
+  detail      String
   type        FoodType
   description String
   isPopular   Boolean

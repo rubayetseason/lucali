@@ -1,6 +1,7 @@
 import Image from "next/image";
 import opening from "../../../assets/hero/opening.jpg";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 const Opening = () => {
   return (
@@ -37,11 +38,13 @@ const Opening = () => {
               FRIDAY & SATURDAY : 11:00 AM - 12:00 AM
             </p>
             <div className="pt-6">
-              <button
-                className={`text-xs border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3 ${styles.paragraph}`}
-              >
-                MAKE RESERVATION
-              </button>
+              <Link href={"/reservation"}>
+                <button
+                  className={`text-xs border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3 ${styles.paragraph}`}
+                >
+                  MAKE RESERVATION
+                </button>
+              </Link>
             </div>
           </div>
         </div>

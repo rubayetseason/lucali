@@ -1,6 +1,7 @@
 import Image from "next/image";
 import hero from "../../../assets/hero/hero-mobile.jpg";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 const HeroMobile = () => {
   return (
@@ -28,11 +29,13 @@ const HeroMobile = () => {
           exudes taste and style.
         </h1>
         <div className="text-center">
-          <button
-            className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph}`}
-          >
-            Make Reservations
-          </button>
+          <Link href={"/reservation"}>
+            <button
+              className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph}`}
+            >
+              Make Reservations
+            </button>
+          </Link>
         </div>
       </div>
     </div>

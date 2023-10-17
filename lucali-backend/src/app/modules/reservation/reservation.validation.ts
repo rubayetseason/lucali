@@ -14,8 +14,8 @@ const createReservationZodSchema = z.object({
     date: z.string({
       required_error: 'Date is required',
     }),
-    userId: z.string({
-      required_error: 'UserId is required',
+    people: z.string({
+      required_error: 'People is required',
     }),
   }),
 });
@@ -40,11 +40,6 @@ const updateReservationZodSchema = z.object({
     date: z
       .string({
         required_error: 'Date is required',
-      })
-      .optional(),
-    userId: z
-      .string({
-        required_error: 'UserId is required',
       })
       .optional(),
   }),

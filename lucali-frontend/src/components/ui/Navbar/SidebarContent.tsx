@@ -9,7 +9,7 @@ import { authKey } from "@/constants/authKey";
 import { useRouter } from "next/navigation";
 
 const SidebarContent = () => {
-  const { role } = getUserInfo() as any;
+  const { name, role } = getUserInfo() as any;
 
   const [isClient, setIsClient] = useState<boolean>(false);
 
@@ -80,6 +80,7 @@ const SidebarContent = () => {
         <li>
           <Link href={"/"}>
             <button
+              onClick={logOut}
               className={`${styles.text} px-6 py-2 border-[1px] border-[#FED18D] text-base font-semibold`}
             >
               Log Out

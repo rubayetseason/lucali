@@ -18,7 +18,7 @@ const Review = () => {
         <div
           className={`text-sm md:text-lg italic text-center font-semibold w-[13rem] md:w-[19rem] lg:w-[30rem] mx-auto ${styles.text}`}
         >
-          They talented team of passionate chefs masterfully crafts each dish,
+          The talented team of passionate chefs masterfully crafts each dish,
           combining the finest ingredients with innovative techniques to present
           culinary creations that are as visually stunning as they are
           delicious.
