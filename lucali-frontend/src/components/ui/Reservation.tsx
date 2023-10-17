@@ -92,14 +92,44 @@ const Reservation = () => {
               {...register("people", {
                 required: "People is required",
               })}
-              className="select select-bordered w-full border-[#FED18D]"
+              className={`select select-bordered w-full border-[#FED18D] ${styles.text} font-bold`}
             >
-              <option value="1 person">1 Person</option>
-              <option value="2 person">2 Person</option>
-              <option value="3 person">3 Person</option>
-              <option value="4 person">4 Person</option>
-              <option value="5 person">5 Person</option>
-              <option value="6 person">6 Person</option>
+              <option
+                value="1 person"
+                className={`${styles.text} text-base py-5 font-bold`}
+              >
+                1 Person
+              </option>
+              <option
+                value="2 person"
+                className={`${styles.text} text-base py-5 font-bold`}
+              >
+                2 Person
+              </option>
+              <option
+                value="3 person"
+                className={`${styles.text} text-base py-5 font-bold`}
+              >
+                3 Person
+              </option>
+              <option
+                value="4 person"
+                className={`${styles.text} text-base py-5 font-bold`}
+              >
+                4 Person
+              </option>
+              <option
+                value="5 person"
+                className={`${styles.text} text-base py-5 font-bold`}
+              >
+                5 Person
+              </option>
+              <option
+                value="6 person"
+                className={`${styles.text} text-base py-5 font-bold`}
+              >
+                6 Person
+              </option>
             </select>
           </div>
           <div className="flex flex-col md:flex-row gap-5">
@@ -126,14 +156,91 @@ const Reservation = () => {
                   Select Time
                 </span>
               </label>
-              <input
-                type="time"
-                required
+              <select
                 {...register("time", {
                   required: "Time is required",
                 })}
-                className="input input-bordered border-[1px] border-[#FED18D] w-full"
-              />
+                className={`select select-bordered w-full border-[#FED18D] ${styles.text} font-bold`}
+              >
+                <option
+                  value="11:00 am"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  11:00 am
+                </option>
+                <option
+                  value="12:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  12:00 pm
+                </option>
+                <option
+                  value="1:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  1:00 pm
+                </option>
+                <option
+                  value="2:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  2:00 pm
+                </option>
+                <option
+                  value="3:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  3:00 pm
+                </option>
+                <option
+                  value="4:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  4:00 pm
+                </option>
+                <option
+                  value="5:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  5:00 pm
+                </option>
+                <option
+                  value="6:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  6:00 pm
+                </option>
+                <option
+                  value="7:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  7:00 pm
+                </option>
+                <option
+                  value="8:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  8:00 pm
+                </option>
+                <option
+                  value="9:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  9:00 pm
+                </option>
+                <option
+                  value="10:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  10:00 pm
+                </option>
+                <option
+                  value="11:00 pm"
+                  className={`${styles.text} text-base py-5 font-bold`}
+                >
+                  11:00 pm
+                </option>
+              </select>
             </div>
           </div>
           <input

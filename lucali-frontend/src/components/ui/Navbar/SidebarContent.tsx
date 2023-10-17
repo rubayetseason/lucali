@@ -41,15 +41,6 @@ const SidebarContent = () => {
         </Link>
       </li>
       <li>
-        <Link href={"/about"}>
-          <button
-            className={`${styles.text} px-2 py-2 border-b-[1px] border-[#FED18D] text-base font-semibold`}
-          >
-            About Us
-          </button>
-        </Link>
-      </li>
-      <li>
         <Link href={"/menu"}>
           <button
             className={`${styles.text} px-2 py-2 border-b-[1px] border-[#FED18D] text-base font-semibold`}
@@ -58,6 +49,16 @@ const SidebarContent = () => {
           </button>
         </Link>
       </li>
+      <li>
+        <Link href={"/about"}>
+          <button
+            className={`${styles.text} px-2 py-2 border-b-[1px] border-[#FED18D] text-base font-semibold`}
+          >
+            About Us
+          </button>
+        </Link>
+      </li>
+
       <li>
         <Link href={"/reservation"}>
           <button

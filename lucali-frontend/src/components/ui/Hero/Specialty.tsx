@@ -4,6 +4,7 @@ import specialty2 from "../../../assets/hero/specialty2.jpg";
 import specialty3 from "../../../assets/hero/specialty3.jpg";
 import specialty4 from "../../../assets/hero/specialty4.jpg";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 interface ISpecialty {
   id: number;
@@ -65,11 +66,13 @@ const Specialty = () => {
         })}
       </div>
       <div className="text-center mt-10">
-        <button
-          className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph}`}
-        >
-          Check Entire Menu
-        </button>
+        <Link href={"/menu"}>
+          <button
+            className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph}`}
+          >
+            Check Entire Menu
+          </button>
+        </Link>
       </div>
     </div>
   );
