@@ -26,13 +26,13 @@ const StartersIndividual = () => {
           Our Starters
         </h1>
       </div>
-      <div className="w-2/3 mx-auto py-10 flex flex-col gap-8 px-5">
+      <div className="w-full md:w-2/3 mx-auto py-10 flex flex-col gap-8 px-5">
         {starters &&
           starters.map((starter: any, i: number) => {
             return (
               <div className="" key={starter?.id}>
                 {i % 2 ? (
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col md:flex-row justify-between items-center">
                     <div>
                       <Image
                         src={starter?.img}
@@ -41,7 +41,7 @@ const StartersIndividual = () => {
                         height={450}
                       />
                     </div>
-                    <div className="pl-10 flex flex-col">
+                    <div className="flex flex-col md:pl-10 mt-2 mb-3 md:my-0">
                       <div className="flex">
                         <div>
                           <h1
@@ -49,7 +49,7 @@ const StartersIndividual = () => {
                           >
                             {starter?.name} &nbsp;&nbsp;{" "}
                             <span
-                              className={`font-bold text-2xl ${styles.text}`}
+                              className={`font-semibold text-2xl ${styles.paragraph}`}
                             >
                               ${starter?.price}
                             </span>
@@ -66,7 +66,7 @@ const StartersIndividual = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex flex-row-reverse justify-between items-center">
+                  <div className="flex flex-col md:flex-row-reverse justify-between items-center">
                     <div>
                       <Image
                         src={starter?.img}
@@ -75,7 +75,7 @@ const StartersIndividual = () => {
                         height={450}
                       />
                     </div>
-                    <div className="flex flex-col pr-10">
+                    <div className="flex flex-col md:pr-10 mt-2 mb-3 md:my-0">
                       <div className="flex">
                         <div>
                           <h1
@@ -83,7 +83,7 @@ const StartersIndividual = () => {
                           >
                             {starter?.name} &nbsp;&nbsp;{" "}
                             <span
-                              className={`font-bold text-2xl ${styles.text}`}
+                              className={`font-semibold text-2xl ${styles.paragraph}`}
                             >
                               ${starter?.price}
                             </span>
