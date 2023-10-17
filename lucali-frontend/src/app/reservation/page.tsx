@@ -35,13 +35,13 @@ const ReservationPage = () => {
           className="w-full h-full object-cover brightness-[0.4]"
         />
         <div className="absolute top-1/2 left-1/2 z-40 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="text-md breadcrumbs opacity-60">
+          <div className="text-md breadcrumbs opacity-80">
             <ul>
               <li>
                 <Link href={"/"}>Home</Link>
               </li>
               <li>
-                <Link href={"/about"}>Reservation</Link>
+                <Link href={"/reservation"}>Reservation</Link>
               </li>
             </ul>
           </div>

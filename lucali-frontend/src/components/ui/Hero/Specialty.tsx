@@ -10,6 +10,7 @@ interface ISpecialty {
   id: number;
   image: any;
   name: string;
+  link: string;
 }
 
 const Specialty = () => {
@@ -18,21 +19,25 @@ const Specialty = () => {
       id: 1,
       image: specialty1,
       name: "Starters",
+      link: "/starters",
     },
     {
       id: 2,
       image: specialty2,
       name: "Mains",
+      link: "/mains",
     },
     {
       id: 3,
       image: specialty3,
       name: "Desserts",
+      link: "/desserts",
     },
     {
       id: 4,
       image: specialty4,
       name: "Mocktails",
+      link: "/mocktails",
     },
   ];
 
@@ -51,16 +56,18 @@ const Specialty = () => {
               className="relative pt-5 md:pt-0"
               data-aos="fade-up"
             >
-              <Image
-                className="brightness-50 w-full h-72 md:h-full md:w-80 object-cover mx-auto hover:brightness-75 transition-brightness duration-200 ease-in-out"
-                src={specialty?.image}
-                alt="item"
-              />
-              <h1
-                className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl ${styles.paragraph}`}
-              >
-                {specialty.name}
-              </h1>
+              <Link href={`${specialty?.link}`}>
+                <Image
+                  className="brightness-50 w-full h-72 md:h-full md:w-80 object-cover mx-auto hover:brightness-75 transition-brightness duration-200 ease-in-out"
+                  src={specialty?.image}
+                  alt="item"
+                />
+                <h1
+                  className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl ${styles.paragraph}`}
+                >
+                  {specialty.name}
+                </h1>
+              </Link>
             </div>
           );
         })}
