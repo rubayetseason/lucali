@@ -2,7 +2,6 @@ import Image from "next/image";
 import dessertsHome from "../../assets/dessertsHome.jpg";
 import Link from "next/link";
 import styles from "./Desserts.module.css";
-import Desserts from "@/components/ui/Food/Desserts";
 import DessetsWrapper from "@/components/ui/Food/DessertsWrapper";
 
 const DessertsPage = () => {
