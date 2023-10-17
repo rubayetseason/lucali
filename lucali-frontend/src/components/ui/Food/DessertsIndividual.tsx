@@ -69,7 +69,7 @@ const DessertsIndividual = () => {
                     <div>
                       <Image
                         src={dessert?.img}
-                        alt="starter"
+                        alt="dessert"
                         width={450}
                         height={450}
                       />

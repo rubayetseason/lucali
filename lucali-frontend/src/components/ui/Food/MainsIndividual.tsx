@@ -69,7 +69,7 @@ const MainsIndividual = () => {
                     <div>
                       <Image
                         src={main?.img}
-                        alt="starter"
+                        alt="main"
                         width={450}
                         height={450}
                       />
