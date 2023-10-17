@@ -1,6 +1,7 @@
 import { useMainsQuery } from "@/redux/api/foodApi";
 import styles from "./Food.module.css";
 import LoadingFood from "./LoadingFood";
+import Link from "next/link";
 
 const Mains = () => {
   const query: Record<string, any> = {};
@@ -30,13 +31,15 @@ const Mains = () => {
             return (
               <div className="" key={main?.id}>
                 <div className="flex justify-between">
-                  <div>
-                    <h1
-                      className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
-                    >
-                      {main?.name}
-                    </h1>
-                  </div>
+                  <Link href={`/menu/food/${main?.id}`}>
+                    <div>
+                      <h1
+                        className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
+                      >
+                        {main?.name}
+                      </h1>
+                    </div>
+                  </Link>
                   <div>
                     <h1
                       className={`pl-2 md:pl-1 text-lg md:text-xl ${styles.text} text-[#FED18D] font-bold`}

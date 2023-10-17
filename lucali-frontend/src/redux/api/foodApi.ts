@@ -66,6 +66,14 @@ export const foodApi = baseApi.injectEndpoints({
       },
       providesTags: [tagTypes.food],
     }),
+
+    singleFood: build.query({
+      query: (id: string | undefined) => ({
+        url: `${FOOD_URL}/${id}`,
+        method: "GET",
+      }),
+      providesTags: [tagTypes.food],
+    }),
   }),
 });
 
@@ -74,4 +82,5 @@ export const {
   useMainsQuery,
   useDessertsQuery,
   useMocktailsQuery,
+  useSingleFoodQuery,
 } = foodApi;
