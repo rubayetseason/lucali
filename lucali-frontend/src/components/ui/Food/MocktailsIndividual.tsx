@@ -1,17 +1,16 @@
-import { useStartersQuery } from "@/redux/api/foodApi";
+import { useMocktailsQuery } from "@/redux/api/foodApi";
 import styles from "./Food.module.css";
 import LoadingFood from "./LoadingFood";
-import Link from "next/link";
 import Image from "next/image";
 
-const StartersIndividual = () => {
+const MocktailsIndividual = () => {
   const query: Record<string, any> = {};
 
   query["limit"] = 10;
   query["page"] = 1;
 
-  const { data, isLoading } = useStartersQuery({ ...query });
-  const starters = data?.food?.data;
+  const { data, isLoading } = useMocktailsQuery({ ...query });
+  const mocktails = data?.food?.data;
 
   if (isLoading) {
     return <LoadingFood></LoadingFood>;
@@ -21,22 +20,22 @@ const StartersIndividual = () => {
     <div>
       <div>
         <h1
-          className={`text-center text-4xl md:text-5xl ${styles.text} text-[#FED18D] font-bold tracking-widest`}
+          className={`text-center  text-4xl md:text-5xl ${styles.text} text-[#FED18D] font-bold tracking-widest`}
         >
-          Our Starters
+          Our Mocktails
         </h1>
       </div>
       <div className="w-full md:w-2/3 mx-auto py-10 flex flex-col gap-8 px-5">
-        {starters &&
-          starters.map((starter: any, i: number) => {
+        {mocktails &&
+          mocktails.map((mocktail: any, i: number) => {
             return (
-              <div className="" key={starter?.id}>
+              <div className="" key={mocktail?.id}>
                 {i % 2 ? (
                   <div className="flex flex-col md:flex-row justify-between items-center">
                     <div>
                       <Image
-                        src={starter?.img}
-                        alt="starter"
+                        src={mocktail?.img}
+                        alt="mocktail"
                         width={450}
                         height={450}
                       />
@@ -47,11 +46,11 @@ const StartersIndividual = () => {
                           <h1
                             className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                           >
-                            {starter?.name} &nbsp;&nbsp;{" "}
+                            {mocktail?.name} &nbsp;&nbsp;{" "}
                             <span
                               className={`font-semibold text-2xl ${styles.paragraph}`}
                             >
-                              ${starter?.price}
+                              ${mocktail?.price}
                             </span>
                           </h1>
                         </div>
@@ -60,7 +59,7 @@ const StartersIndividual = () => {
                         <h1
                           className={`pt-2 md:pt-1 text-xs md:text-base ${styles.paragraph} text-slate-200 font-normal`}
                         >
-                          {starter?.detail}
+                          {mocktail?.detail}
                         </h1>
                       </div>
                     </div>
@@ -69,8 +68,8 @@ const StartersIndividual = () => {
                   <div className="flex flex-col md:flex-row-reverse justify-between items-center">
                     <div>
                       <Image
-                        src={starter?.img}
-                        alt="starter"
+                        src={mocktail?.img}
+                        alt="mocktail"
                         width={450}
                         height={450}
                       />
@@ -81,11 +80,11 @@ const StartersIndividual = () => {
                           <h1
                             className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                           >
-                            {starter?.name} &nbsp;&nbsp;{" "}
+                            {mocktail?.name} &nbsp;&nbsp;{" "}
                             <span
                               className={`font-semibold text-2xl ${styles.paragraph}`}
                             >
-                              ${starter?.price}
+                              ${mocktail?.price}
                             </span>
                           </h1>
                         </div>
@@ -94,7 +93,7 @@ const StartersIndividual = () => {
                         <h1
                           className={`pt-2 md:pt-1 text-xs md:text-base ${styles.paragraph} text-slate-200 font-normal`}
                         >
-                          {starter?.detail}
+                          {mocktail?.detail}
                         </h1>
                       </div>
                     </div>
@@ -108,4 +107,4 @@ const StartersIndividual = () => {
   );
 };
 
-export default StartersIndividual;
+export default MocktailsIndividual;
