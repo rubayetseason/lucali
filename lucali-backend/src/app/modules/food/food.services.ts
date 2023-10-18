@@ -27,9 +27,6 @@ const getSingleFood = async (id: string): Promise<Food | null> => {
     where: {
       id,
     },
-    include: {
-      reviews: true,
-    },
   });
   return result;
 };

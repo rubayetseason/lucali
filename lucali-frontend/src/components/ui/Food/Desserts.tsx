@@ -2,6 +2,7 @@ import { useDessertsQuery } from "@/redux/api/foodApi";
 import styles from "./Food.module.css";
 import LoadingFood from "./LoadingFood";
 import Link from "next/link";
+import { FaStarOfLife } from "react-icons/fa6";
 
 const Desserts = () => {
   const query: Record<string, any> = {};
@@ -34,9 +35,14 @@ const Desserts = () => {
                   <Link href={`/menu/food/${dessert?.id}`}>
                     <div>
                       <h1
-                        className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
+                        className={`flex text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                       >
-                        {dessert?.name}
+                        {dessert?.name}{" "}
+                        {dessert?.isPopular ? (
+                          <FaStarOfLife className="text-xs" />
+                        ) : (
+                          ""
+                        )}
                       </h1>
                     </div>
                   </Link>

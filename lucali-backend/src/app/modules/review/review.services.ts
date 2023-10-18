@@ -7,7 +7,6 @@ const createReview = async (data: Review): Promise<Review> => {
     data,
     include: {
       food: true,
-      user: true,
     },
   });
   return result;
@@ -17,7 +16,6 @@ const getAllReviews = async (): Promise<IGenericResponse<Review[]>> => {
   const result = await prisma.review.findMany({
     include: {
       food: true,
-      user: true,
     },
   });
 
@@ -38,7 +36,6 @@ const getSingleReview = async (id: string): Promise<Review | null> => {
     },
     include: {
       food: true,
-      user: true,
     },
   });
   return result;
@@ -55,7 +52,6 @@ const updateReview = async (
     data: payload,
     include: {
       food: true,
-      user: true,
     },
   });
   return result;
@@ -68,7 +64,6 @@ const deleteReview = async (id: string): Promise<Review> => {
     },
     include: {
       food: true,
-      user: true,
     },
   });
   return result;

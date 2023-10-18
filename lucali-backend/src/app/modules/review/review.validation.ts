@@ -8,8 +8,8 @@ const createReviewZodSchema = z.object({
     foodId: z.string({
       required_error: 'FoodId is required',
     }),
-    userId: z.string({
-      required_error: 'UserId is required',
+    userName: z.string({
+      required_error: 'UserName is required',
     }),
   }),
 });

@@ -2,6 +2,7 @@ import { useMainsQuery } from "@/redux/api/foodApi";
 import styles from "./Food.module.css";
 import LoadingFood from "./LoadingFood";
 import Link from "next/link";
+import { FaStarOfLife } from "react-icons/fa6";
 
 const Mains = () => {
   const query: Record<string, any> = {};
@@ -34,9 +35,14 @@ const Mains = () => {
                   <Link href={`/menu/food/${main?.id}`}>
                     <div>
                       <h1
-                        className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
+                        className={`flex text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                       >
-                        {main?.name}
+                        {main?.name}{" "}
+                        {main?.isPopular ? (
+                          <FaStarOfLife className="text-xs" />
+                        ) : (
+                          ""
+                        )}
                       </h1>
                     </div>
                   </Link>
