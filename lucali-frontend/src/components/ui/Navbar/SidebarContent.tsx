@@ -15,7 +15,7 @@ const SidebarContent = () => {
 
   useEffect(() => {
     role && setIsClient(true);
-  }, [role]);
+  }, [role, isClient]);
 
   const router = useRouter();
 

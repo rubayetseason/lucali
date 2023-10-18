@@ -61,28 +61,32 @@ const LeaveReview = ({ id }: IdProps) => {
         Leave a review
       </h1>
       {/* comment */}
-      <div className="px-5">
-        <form onSubmit={handleSubmit(handleReview)}>
-          <div className="flex flex-col md:flex-row items-center gap-5">
-            <div className="flex-1 form-control w-full mt-2">
+      {name ? (
+        <div className="px-5">
+          <form onSubmit={handleSubmit(handleReview)}>
+            <div className="flex flex-col md:flex-row items-center gap-5">
+              <div className="flex-1 form-control w-full mt-2">
+                <input
+                  type="text"
+                  placeholder="Leave a comment..."
+                  required
+                  {...register("reviewDescription", {
+                    required: "Review is required",
+                  })}
+                  className="input input-bordered border-[1px] bg-[#0F1D22] border-[#FED18D] w-full"
+                />
+              </div>
               <input
-                type="text"
-                placeholder="Leave a comment..."
-                required
-                {...register("reviewDescription", {
-                  required: "Review is required",
-                })}
-                className="input input-bordered border-[1px] bg-[#0F1D22] border-[#FED18D] w-full"
+                className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph} cursor-pointer`}
+                value="Comment"
+                type="submit"
               />
             </div>
-            <input
-              className={`border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3  ${styles.paragraph} cursor-pointer`}
-              value="Comment"
-              type="submit"
-            />
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
+      ) : (
+        <h1 className={`text-3xl font-bold text-[#FED18D] text-center ${styles.text}`}>Login to leave a comment</h1>
+      )}
 
       {/* reviews */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 py-14">

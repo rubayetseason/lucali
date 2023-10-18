@@ -17,6 +17,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1', routes);
 
+app.get('/', (req: Request, res: Response) => {
+  res.status(httpStatus.OK).json({
+    sucess: true,
+    message: 'Welcome to lucali backend',
+  });
+});
 
 //global error handler
 app.use(globalErrorHandler);
