@@ -1,6 +1,7 @@
 import Image from "next/image";
 import discover from "../../../assets/hero/discover.jpg";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 const Discover = () => {
   return (
@@ -37,11 +38,13 @@ const Discover = () => {
           <br />
         </h1>
         <div className="pb-8">
-          <button
-            className={`text-xs border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3 ${styles.paragraph}`}
-          >
-            DISCOVER THE KITCHEN
-          </button>
+          <Link href={"/menu"}>
+            <button
+              className={`text-xs border-t-[1px] border-b-[1px] border-[#FED18D] px-2 py-3 ${styles.paragraph}`}
+            >
+              DISCOVER THE MENU
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex-1">
