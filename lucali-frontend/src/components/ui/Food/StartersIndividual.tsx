@@ -1,8 +1,9 @@
 import { useStartersQuery } from "@/redux/api/foodApi";
 import styles from "./Food.module.css";
 import LoadingFood from "./LoadingFood";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { FaStarOfLife } from "react-icons/fa6";
 
 const StartersIndividual = () => {
   const query: Record<string, any> = {};
@@ -33,28 +34,38 @@ const StartersIndividual = () => {
               <div className="" key={starter?.id}>
                 {i % 2 ? (
                   <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div>
-                      <Image
-                        src={starter?.img}
-                        alt="starter"
-                        width={450}
-                        height={450}
-                      />
-                    </div>
+                    <Link href={`/menu/food/${starter?.id}`}>
+                      <div>
+                        <Image
+                          src={starter?.img}
+                          alt="starter"
+                          width={450}
+                          height={450}
+                        />
+                      </div>
+                    </Link>
+
                     <div className="flex flex-col md:pl-10 mt-2 mb-3 md:my-0">
                       <div className="flex">
-                        <div>
-                          <h1
-                            className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
-                          >
-                            {starter?.name} &nbsp;&nbsp;{" "}
-                            <span
-                              className={`font-semibold text-2xl ${styles.paragraph}`}
+                        <Link href={`/menu/food/${starter?.id}`}>
+                          <div>
+                            <h1
+                              className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                             >
-                              ${starter?.price}
-                            </span>
-                          </h1>
-                        </div>
+                              {starter?.isPopular ? (
+                                <FaStarOfLife className="text-xs" />
+                              ) : (
+                                ""
+                              )}{" "}
+                              {starter?.name} &nbsp;&nbsp;{" "}
+                              <span
+                                className={`font-semibold text-2xl ${styles.paragraph}`}
+                              >
+                                ${starter?.price}
+                              </span>
+                            </h1>
+                          </div>
+                        </Link>
                       </div>
                       <div>
                         <h1
@@ -67,28 +78,37 @@ const StartersIndividual = () => {
                   </div>
                 ) : (
                   <div className="flex flex-col md:flex-row-reverse justify-between items-center">
-                    <div>
-                      <Image
-                        src={starter?.img}
-                        alt="starter"
-                        width={450}
-                        height={450}
-                      />
-                    </div>
+                    <Link href={`/menu/food/${starter?.id}`}>
+                      <div>
+                        <Image
+                          src={starter?.img}
+                          alt="starter"
+                          width={450}
+                          height={450}
+                        />
+                      </div>
+                    </Link>
                     <div className="flex flex-col md:pr-10 mt-2 mb-3 md:my-0">
                       <div className="flex">
-                        <div>
-                          <h1
-                            className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
-                          >
-                            {starter?.name} &nbsp;&nbsp;{" "}
-                            <span
-                              className={`font-semibold text-2xl ${styles.paragraph}`}
+                        <Link href={`/menu/food/${starter?.id}`}>
+                          <div>
+                            <h1
+                              className={` text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                             >
-                              ${starter?.price}
-                            </span>
-                          </h1>
-                        </div>
+                              {starter?.isPopular ? (
+                                <FaStarOfLife className="text-xs" />
+                              ) : (
+                                ""
+                              )}{" "}
+                              {starter?.name} &nbsp;&nbsp;{" "}
+                              <span
+                                className={`font-semibold text-2xl ${styles.paragraph}`}
+                              >
+                                ${starter?.price}
+                              </span>
+                            </h1>
+                          </div>
+                        </Link>
                       </div>
                       <div>
                         <h1

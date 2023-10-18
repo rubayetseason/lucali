@@ -2,6 +2,8 @@ import { useMocktailsQuery } from "@/redux/api/foodApi";
 import styles from "./Food.module.css";
 import LoadingFood from "./LoadingFood";
 import Image from "next/image";
+import { FaStarOfLife } from "react-icons/fa6";
+import Link from "next/link";
 
 const MocktailsIndividual = () => {
   const query: Record<string, any> = {};
@@ -32,28 +34,37 @@ const MocktailsIndividual = () => {
               <div className="" key={mocktail?.id}>
                 {i % 2 ? (
                   <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div>
-                      <Image
-                        src={mocktail?.img}
-                        alt="mocktail"
-                        width={450}
-                        height={450}
-                      />
-                    </div>
+                    <Link href={`/menu/food/${mocktail?.id}`}>
+                      <div>
+                        <Image
+                          src={mocktail?.img}
+                          alt="mocktail"
+                          width={450}
+                          height={450}
+                        />
+                      </div>
+                    </Link>
                     <div className="flex flex-col md:pl-10 mt-2 mb-3 md:my-0">
                       <div className="flex">
-                        <div>
-                          <h1
-                            className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
-                          >
-                            {mocktail?.name} &nbsp;&nbsp;{" "}
-                            <span
-                              className={`font-semibold text-2xl ${styles.paragraph}`}
+                        <Link href={`/menu/food/${mocktail?.id}`}>
+                          <div>
+                            <h1
+                              className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                             >
-                              ${mocktail?.price}
-                            </span>
-                          </h1>
-                        </div>
+                              {mocktail?.isPopular ? (
+                                <FaStarOfLife className="text-xs" />
+                              ) : (
+                                ""
+                              )}{" "}
+                              {mocktail?.name} &nbsp;&nbsp;{" "}
+                              <span
+                                className={`font-semibold text-2xl ${styles.paragraph}`}
+                              >
+                                ${mocktail?.price}
+                              </span>
+                            </h1>
+                          </div>
+                        </Link>
                       </div>
                       <div>
                         <h1
@@ -66,28 +77,37 @@ const MocktailsIndividual = () => {
                   </div>
                 ) : (
                   <div className="flex flex-col md:flex-row-reverse justify-between items-center">
-                    <div>
-                      <Image
-                        src={mocktail?.img}
-                        alt="mocktail"
-                        width={450}
-                        height={450}
-                      />
-                    </div>
+                    <Link href={`/menu/food/${mocktail?.id}`}>
+                      <div>
+                        <Image
+                          src={mocktail?.img}
+                          alt="mocktail"
+                          width={450}
+                          height={450}
+                        />
+                      </div>
+                    </Link>
                     <div className="flex flex-col md:pr-10 mt-2 mb-3 md:my-0">
                       <div className="flex">
-                        <div>
-                          <h1
-                            className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
-                          >
-                            {mocktail?.name} &nbsp;&nbsp;{" "}
-                            <span
-                              className={`font-semibold text-2xl ${styles.paragraph}`}
+                        <Link href={`/menu/food/${mocktail?.id}`}>
+                          <div>
+                            <h1
+                              className={`text-xl md:text-2xl ${styles.text} text-[#FED18D] border-b-[1px] border-[#FED18D] font-medium`}
                             >
-                              ${mocktail?.price}
-                            </span>
-                          </h1>
-                        </div>
+                              {mocktail?.isPopular ? (
+                                <FaStarOfLife className="text-xs" />
+                              ) : (
+                                ""
+                              )}{" "}
+                              {mocktail?.name} &nbsp;&nbsp;{" "}
+                              <span
+                                className={`font-semibold text-2xl ${styles.paragraph}`}
+                              >
+                                ${mocktail?.price}
+                              </span>
+                            </h1>
+                          </div>
+                        </Link>
                       </div>
                       <div>
                         <h1
