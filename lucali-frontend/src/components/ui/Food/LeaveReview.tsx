@@ -16,7 +16,9 @@ const LeaveReview = ({ id }: IdProps) => {
 
   return (
     <div className="py-10 bg-[#0F1D22]">
-      <h1 className={`py-10 text-4xl font-semibold ${styles.text} text-center`}>
+      <h1
+        className={`py-10 text-4xl font-semibold ${styles.text} text-[#FED18D] text-center`}
+      >
         Leave a review
       </h1>
 
@@ -43,19 +45,27 @@ const LeaveReview = ({ id }: IdProps) => {
 
               return (
                 <div key={review?.id}>
-                  <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
+                  <div className="container flex flex-col border-[1px] border-[#FED18D] w-full max-w-lg p-6 mx-auto divide-y divide-[#FED18D] bg-gray-900 text-gray-100">
                     <div className="flex justify-between p-4">
                       <div className="flex space-x-4">
                         <div>
-                          <h4 className="font-bold">{review?.reviewer}</h4>
-                          <span className="text-xs dark:text-gray-400">
+                          <h4
+                            className={`font-bold text-xl ${styles.paragraph} text-[#FED18D]`}
+                          >
+                            {review?.reviewer}
+                          </h4>
+                          <span
+                            className={`font-semibold text-sm text-gray-100 ${styles.paragraph}`}
+                          >
                             {formattedTime}
                           </span>
                         </div>
                       </div>
                     </div>
-                    <div className="p-4 space-y-2 text-sm dark:text-gray-400">
-                      <p>{review?.reviewDescription}</p>
+                    <div className="p-4 space-y-2 text-gray-400">
+                      <p className={`font-semibold text-lg ${styles.text}`}>
+                        {review?.reviewDescription}
+                      </p>
                     </div>
                   </div>
                 </div>
