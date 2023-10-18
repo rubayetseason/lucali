@@ -29,13 +29,10 @@ const getAllReviews = async (): Promise<IGenericResponse<Review[]>> => {
   };
 };
 
-const getSingleReview = async (id: string): Promise<Review | null> => {
-  const result = await prisma.review.findUnique({
+const getReviews = async (id: string): Promise<Review[] | null> => {
+  const result = await prisma.review.findMany({
     where: {
-      id,
-    },
-    include: {
-      food: true,
+      foodId: id,
     },
   });
   return result;
@@ -72,7 +69,7 @@ const deleteReview = async (id: string): Promise<Review> => {
 export const ReviewService = {
   createReview,
   getAllReviews,
-  getSingleReview,
+  getReviews,
   updateReview,
   deleteReview,
 };

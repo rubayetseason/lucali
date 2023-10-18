@@ -54,7 +54,7 @@ model Food {
 model Review {
   id                String   @id @default(uuid())
   reviewDescription String
-  userName          String
+  reviewer          String
   createdAt         DateTime @default(now())
   updatedAt         DateTime @updatedAt
   foodId            String

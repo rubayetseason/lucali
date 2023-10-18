@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../../Menu.module.css";
 import LoadingPage from "@/app/loading";
+import LeaveReview from "@/components/ui/Food/LeaveReview";
 
 type IdProps = {
   params: any;
@@ -78,6 +79,10 @@ const SingleFoodItem = ({ params }: IdProps) => {
             {data?.description}
           </div>
         </div>
+      </div>
+      {/* review */}
+      <div>
+        <LeaveReview id={data?.id}></LeaveReview>
       </div>
     </div>
   );

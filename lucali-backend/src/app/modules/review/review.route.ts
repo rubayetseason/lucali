@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/', ReviewController.getAllReviews);
 
-router.get('/:id', ReviewController.getSingleReview);
+router.get('/:id', ReviewController.getReviews);
 
 router.post(
   '/create-review',
